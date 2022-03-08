@@ -1,0 +1,38 @@
+[01m[K/home/fri/Documents/julia/catkin_ws/src/opencv_hw/src/ROSInterface.cpp:7:28:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[Kobj[m[K’
+   ROSInterface(ColorFilter [01;31m[Kobj[m[K) : _it(_nh)  {
+                            [01;31m[K^~~[m[K
+[01m[K/home/fri/Documents/julia/catkin_ws/src/opencv_hw/src/ROSInterface.cpp:18:17:[m[K [01;31m[Kerror: [m[Kdeclaration of ‘[01m[K~ROSInterface[m[K’ as non-member
+   ~ROSInterface([01;31m[K)[m[K {
+                 [01;31m[K^[m[K
+[01m[K/home/fri/Documents/julia/catkin_ws/src/opencv_hw/src/ROSInterface.cpp:[m[K In function ‘[01m[Kvoid imageCb(const ImageConstPtr&)[m[K’:
+[01m[K/home/fri/Documents/julia/catkin_ws/src/opencv_hw/src/ROSInterface.cpp:29:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kobject[m[K’ was not declared in this scope
+     [01;31m[Kobject[m[K.processImage(cv_ptr->image);
+     [01;31m[K^~~~~~[m[K
+[01m[K/home/fri/Documents/julia/catkin_ws/src/opencv_hw/src/ROSInterface.cpp:29:5:[m[K [01;36m[Knote: [m[Ksuggested alternative: ‘[01m[KcvRect[m[K’
+     [01;36m[Kobject[m[K.processImage(cv_ptr->image);
+     [01;36m[K^~~~~~[m[K
+     [32m[KcvRect[m[K
+[01m[K/home/fri/Documents/julia/catkin_ws/src/opencv_hw/src/ROSInterface.cpp:50:9:[m[K [01;31m[Kerror: [m[K‘[01m[K_green[m[K’ was not declared in this scope
+         [01;31m[K_green[m[K.publish(msg);
+         [01;31m[K^~~~~~[m[K
+[01m[K/home/fri/Documents/julia/catkin_ws/src/opencv_hw/src/ROSInterface.cpp:50:9:[m[K [01;36m[Knote: [m[Ksuggested alternative: ‘[01m[Kmbrlen[m[K’
+         [01;36m[K_green[m[K.publish(msg);
+         [01;36m[K^~~~~~[m[K
+         [32m[Kmbrlen[m[K
+[01m[K/home/fri/Documents/julia/catkin_ws/src/opencv_hw/src/ROSInterface.cpp:63:9:[m[K [01;31m[Kerror: [m[K‘[01m[K_blue[m[K’ was not declared in this scope
+         [01;31m[K_blue[m[K.publish(msg);
+         [01;31m[K^~~~~[m[K
+[01m[K/home/fri/Documents/julia/catkin_ws/src/opencv_hw/src/ROSInterface.cpp:76:9:[m[K [01;31m[Kerror: [m[K‘[01m[K_red[m[K’ was not declared in this scope
+         [01;31m[K_red[m[K.publish(msg);
+         [01;31m[K^~~~[m[K
+[01m[K/home/fri/Documents/julia/catkin_ws/src/opencv_hw/src/ROSInterface.cpp:76:9:[m[K [01;36m[Knote: [m[Ksuggested alternative: ‘[01m[Kpread[m[K’
+         [01;36m[K_red[m[K.publish(msg);
+         [01;36m[K^~~~[m[K
+         [32m[Kpread[m[K
+[01m[K/home/fri/Documents/julia/catkin_ws/src/opencv_hw/src/ROSInterface.cpp:90:9:[m[K [01;31m[Kerror: [m[K‘[01m[K_bgr[m[K’ was not declared in this scope
+         [01;31m[K_bgr[m[K.publish(msg);
+         [01;31m[K^~~~[m[K
+make[2]: *** [CMakeFiles/opencv_hw.dir/src/ROSInterface.cpp.o] Error 1
+make[2]: *** Waiting for unfinished jobs....
+make[1]: *** [CMakeFiles/opencv_hw.dir/all] Error 2
+make: *** [all] Error 2

@@ -1,0 +1,6 @@
+/usr/bin/ld: cannot find -lColorFilter
+/usr/bin/ld: cannot find -lROSInterface
+collect2: error: ld returned 1 exit status
+make[2]: *** [/home/fri/Documents/julia/catkin_ws/devel/.private/opencv_hw/lib/opencv_hw/opencv_hw] Error 1
+make[1]: *** [CMakeFiles/opencv_hw.dir/all] Error 2
+make: *** [all] Error 2

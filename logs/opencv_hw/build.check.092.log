@@ -1,0 +1,9 @@
+[31m[1mCMake Error[0m at /home/fri/Documents/julia/catkin_ws/src/opencv_hw/CMakeLists.txt:218:
+  Parse error.  Function missing ending ")".  End of file reached.
+
+
+[36m--[0m Configuring incomplete, errors occurred!
+See also "/home/fri/Documents/julia/catkin_ws/build/opencv_hw/CMakeFiles/CMakeOutput.log".
+See also "/home/fri/Documents/julia/catkin_ws/build/opencv_hw/CMakeFiles/CMakeError.log".
+Makefile:774: recipe for target 'cmake_check_build_system' failed
+make: *** [cmake_check_build_system] Error 1

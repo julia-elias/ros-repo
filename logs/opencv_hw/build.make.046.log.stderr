@@ -1,0 +1,27 @@
+In file included from [01m[K/home/fri/Documents/julia/catkin_ws/src/opencv_hw/src/opencv_hw.cpp:3:0[m[K:
+[01m[K/home/fri/Documents/julia/catkin_ws/src/opencv_hw/include/opencv_hw/ROSInterface.h:22:19:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+     ~ROSInterface([01;31m[K)[m[Kl
+                   [01;31m[K^[m[K
+[01m[K/home/fri/Documents/julia/catkin_ws/src/opencv_hw/include/opencv_hw/ROSInterface.h:22:20:[m[K [01;31m[Kerror: [m[K‘[01m[Kl[m[K’ does not name a type
+     ~ROSInterface()[01;31m[Kl[m[K
+                    [01;31m[K^[m[K
+In file included from [01m[K/home/fri/Documents/julia/catkin_ws/src/opencv_hw/src/ROSInterface.cpp:2:0[m[K:
+[01m[K/home/fri/Documents/julia/catkin_ws/src/opencv_hw/include/opencv_hw/ROSInterface.h:22:19:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+     ~ROSInterface([01;31m[K)[m[Kl
+                   [01;31m[K^[m[K
+[01m[K/home/fri/Documents/julia/catkin_ws/src/opencv_hw/include/opencv_hw/ROSInterface.h:22:20:[m[K [01;31m[Kerror: [m[K‘[01m[Kl[m[K’ does not name a type
+     ~ROSInterface()[01;31m[Kl[m[K
+                    [01;31m[K^[m[K
+[01m[K/home/fri/Documents/julia/catkin_ws/src/opencv_hw/src/ROSInterface.cpp:[m[K In constructor ‘[01m[KROSInterface::ROSInterface(ColorFilter)[m[K’:
+[01m[K/home/fri/Documents/julia/catkin_ws/src/opencv_hw/src/ROSInterface.cpp:8:71:[m[K [01;31m[Kerror: [m[K‘[01m[KimageCb[m[K’ is not a member of ‘[01m[KROSInterface[m[K’
+     _sub = _it.subscribe("/kinect2/hd/image_color", 1, &ROSInterface::[01;31m[KimageCb[m[K, this);
+                                                                       [01;31m[K^~~~~~~[m[K
+[01m[K/home/fri/Documents/julia/catkin_ws/src/opencv_hw/src/ROSInterface.cpp:[m[K At global scope:
+[01m[K/home/fri/Documents/julia/catkin_ws/src/opencv_hw/src/ROSInterface.cpp:23:67:[m[K [01;31m[Kerror: [m[Kno ‘[01m[Kvoid ROSInterface::imageCb(const ImageConstPtr&)[m[K’ member function declared in class ‘[01m[KROSInterface[m[K’
+   void ROSInterface::imageCb(const sensor_msgs::ImageConstPtr& msg[01;31m[K)[m[K {
+                                                                   [01;31m[K^[m[K
+make[2]: *** [CMakeFiles/opencv_hw.dir/src/opencv_hw.cpp.o] Error 1
+make[2]: *** Waiting for unfinished jobs....
+make[2]: *** [CMakeFiles/opencv_hw.dir/src/ROSInterface.cpp.o] Error 1
+make[1]: *** [CMakeFiles/opencv_hw.dir/all] Error 2
+make: *** [all] Error 2

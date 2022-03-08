@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/fri/Documents/julia/catkin_ws/devel/.private/opencv_hw/setup.sh

@@ -1,0 +1,18 @@
+[01m[K/home/fri/Documents/julia/catkin_ws/src/opencv_hw/src/ROSInterface.cpp:[m[K In constructor ‘[01m[KROSInterface::ROSInterface()[m[K’:
+[01m[K/home/fri/Documents/julia/catkin_ws/src/opencv_hw/src/ROSInterface.cpp:17:31:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KROSInterface::ROSInterface()[m[K’
+   ROSInterface::~ROSInterface([01;31m[K)[m[K {}
+                               [01;31m[K^[m[K
+In file included from [01m[K/home/fri/Documents/julia/catkin_ws/src/opencv_hw/src/ROSInterface.cpp:2:0[m[K:
+[01m[K/home/fri/Documents/julia/catkin_ws/src/opencv_hw/include/opencv_hw/ROSInterface.h:30:5:[m[K [01;36m[Knote: [m[Kcandidate: ROSInterface::~ROSInterface()
+     [01;36m[K~[m[KROSInterface();
+     [01;36m[K^[m[K
+[01m[K/home/fri/Documents/julia/catkin_ws/src/opencv_hw/include/opencv_hw/ROSInterface.h:30:5:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 0 provided
+[01m[K/home/fri/Documents/julia/catkin_ws/src/opencv_hw/src/ROSInterface.cpp:19:29:[m[K [01;31m[Kerror: [m[Kqualified-id in declaration before ‘[01m[K([m[K’ token
+   void ROSInterface::imageCb[01;31m[K([m[Kconst sensor_msgs::ImageConstPtr& msg) {
+                             [01;31m[K^[m[K
+[01m[K/home/fri/Documents/julia/catkin_ws/src/opencv_hw/src/ROSInterface.cpp:46:3:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K}[m[K’ at end of input
+   [01;31m[K}[m[K
+   [01;31m[K^[m[K
+make[2]: *** [CMakeFiles/opencv_hw.dir/src/ROSInterface.cpp.o] Error 1
+make[1]: *** [CMakeFiles/opencv_hw.dir/all] Error 2
+make: *** [all] Error 2

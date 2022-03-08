@@ -1,0 +1,6 @@
+make[2]: *** No rule to make target 'CMakeFiles/opencv_pub.dir/build'.  Stop.
+make[1]: *** [CMakeFiles/opencv_pub.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+make[2]: *** No rule to make target 'CMakeFiles/opencv_sub.dir/build'.  Stop.
+make[1]: *** [CMakeFiles/opencv_sub.dir/all] Error 2
+make: *** [all] Error 2

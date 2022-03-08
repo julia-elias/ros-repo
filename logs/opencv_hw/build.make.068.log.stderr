@@ -1,0 +1,14 @@
+[01m[K/home/fri/Documents/julia/catkin_ws/src/opencv_hw/src/ROSInterface.cpp:[m[K In member function ‘[01m[Kvoid ROSInterface::imageCb(const ImageConstPtr&)[m[K’:
+[01m[K/home/fri/Documents/julia/catkin_ws/src/opencv_hw/src/ROSInterface.cpp:43:27:[m[K [01;31m[Kerror: [m[Kdeclaration of ‘[01m[Ksensor_msgs::ImagePtr msg[m[K’ shadows a parameter
+     sensor_msgs::ImagePtr [01;31m[Kmsg[m[K =
+                           [01;31m[K^~~[m[K
+[01m[K/home/fri/Documents/julia/catkin_ws/src/opencv_hw/src/ROSInterface.cpp:45:18:[m[K [01;31m[Kerror: [m[K‘[01m[Kbgr_msg[m[K’ was not declared in this scope
+     _bgr.publish([01;31m[Kbgr_msg[m[K);
+                  [01;31m[K^~~~~~~[m[K
+[01m[K/home/fri/Documents/julia/catkin_ws/src/opencv_hw/src/ROSInterface.cpp:45:18:[m[K [01;36m[Knote: [m[Ksuggested alternative: ‘[01m[Kblue_msg[m[K’
+     _bgr.publish([01;36m[Kbgr_msg[m[K);
+                  [01;36m[K^~~~~~~[m[K
+                  [32m[Kblue_msg[m[K
+make[2]: *** [CMakeFiles/opencv_hw.dir/src/ROSInterface.cpp.o] Error 1
+make[1]: *** [CMakeFiles/opencv_hw.dir/all] Error 2
+make: *** [all] Error 2

@@ -1,0 +1,1 @@
+/home/fri/Documents/julia/catkin_ws/devel/.private/opencv_hw/lib/pkgconfig/opencv_hw.pc

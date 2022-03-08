@@ -1,0 +1,5 @@
+[31m[1mCMake Error[0m at /home/fri/Documents/julia/catkin_ws/src/opencv_hw/CMakeLists.txt:218:
+  Parse error.  Function missing ending ")".  End of file reached.
+
+
+make: *** [cmake_check_build_system] Error 1

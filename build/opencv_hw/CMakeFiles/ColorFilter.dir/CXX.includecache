@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/fri/Documents/julia/catkin_ws/src/opencv_hw/include/opencv_hw/ColorFilter.h
+opencv2/opencv.hpp
+-
+string
+-
+vector
+-
+
+/home/fri/Documents/julia/catkin_ws/src/opencv_hw/src/ColorFilter.cpp
+ColorFilter.h
+/home/fri/Documents/julia/catkin_ws/src/opencv_hw/src/ColorFilter.h
+

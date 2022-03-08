@@ -1,0 +1,1 @@
+/usr/bin/c++    -rdynamic CMakeFiles/ROSInterface.dir/src/ROSInterface.cpp.o  -o /home/fri/Documents/julia/catkin_ws/devel/.private/opencv_hw/lib/opencv_hw/ROSInterface 

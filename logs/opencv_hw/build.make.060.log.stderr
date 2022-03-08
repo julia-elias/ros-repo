@@ -1,0 +1,17 @@
+[01m[K/home/fri/Documents/julia/catkin_ws/src/opencv_hw/src/ROSInterface.cpp:[m[K In constructor ‘[01m[KROSInterface::ROSInterface(ColorFilter)[m[K’:
+[01m[K/home/fri/Documents/julia/catkin_ws/src/opencv_hw/src/ROSInterface.cpp:8:45:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kimage_transport::ImageTransport::ImageTransport()[m[K’
+   ROSInterface::ROSInterface(ColorFilter obj[01;31m[K)[m[K  {
+                                             [01;31m[K^[m[K
+In file included from [01m[K/home/fri/Documents/julia/catkin_ws/src/opencv_hw/include/opencv_hw/ROSInterface.h:7:0[m[K,
+                 from [01m[K/home/fri/Documents/julia/catkin_ws/src/opencv_hw/src/ROSInterface.cpp:1[m[K:
+[01m[K/opt/ros/melodic/include/image_transport/image_transport.h:54:12:[m[K [01;36m[Knote: [m[Kcandidate: image_transport::ImageTransport::ImageTransport(const ros::NodeHandle&)
+   explicit [01;36m[KImageTransport[m[K(const ros::NodeHandle& nh);
+            [01;36m[K^~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/melodic/include/image_transport/image_transport.h:54:12:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 0 provided
+[01m[K/opt/ros/melodic/include/image_transport/image_transport.h:51:7:[m[K [01;36m[Knote: [m[Kcandidate: image_transport::ImageTransport::ImageTransport(const image_transport::ImageTransport&)
+ class [01;36m[KImageTransport[m[K
+       [01;36m[K^~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/melodic/include/image_transport/image_transport.h:51:7:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 0 provided
+make[2]: *** [CMakeFiles/opencv_hw.dir/src/ROSInterface.cpp.o] Error 1
+make[1]: *** [CMakeFiles/opencv_hw.dir/all] Error 2
+make: *** [all] Error 2

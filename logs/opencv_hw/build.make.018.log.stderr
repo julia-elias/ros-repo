@@ -1,0 +1,177 @@
+/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/Scrt1.o: In function `_start':
+(.text+0x20): undefined reference to `main'
+CMakeFiles/ColorFilter.dir/src/ColorFilter.cpp.o: In function `ColorFilter::split()':
+ColorFilter.cpp:(.text+0xb7): undefined reference to `cv::split(cv::_InputArray const&, cv::_OutputArray const&)'
+CMakeFiles/ColorFilter.dir/src/ColorFilter.cpp.o: In function `ColorFilter::showResult()':
+ColorFilter.cpp:(.text+0x170): undefined reference to `cv::imshow(cv::String const&, cv::_InputArray const&)'
+CMakeFiles/ColorFilter.dir/src/ColorFilter.cpp.o: In function `ColorFilter::findBlue()':
+ColorFilter.cpp:(.text+0x208): undefined reference to `cv::noArray()'
+ColorFilter.cpp:(.text+0x2a4): undefined reference to `cv::subtract(cv::_InputArray const&, cv::_InputArray const&, cv::_OutputArray const&, cv::_InputArray const&, int)'
+ColorFilter.cpp:(.text+0x352): undefined reference to `cv::threshold(cv::_InputArray const&, cv::_OutputArray const&, double, double, int)'
+ColorFilter.cpp:(.text+0x41a): undefined reference to `cv::findContours(cv::_InputOutputArray const&, cv::_OutputArray const&, cv::_OutputArray const&, int, int, cv::Point_<int>)'
+ColorFilter.cpp:(.text+0x4cf): undefined reference to `cv::contourArea(cv::_InputArray const&, bool)'
+ColorFilter.cpp:(.text+0x542): undefined reference to `cv::Mat::zeros(int, int, int)'
+ColorFilter.cpp:(.text+0x64d): undefined reference to `cv::drawContours(cv::_InputOutputArray const&, cv::_InputArray const&, int, cv::Scalar_<double> const&, int, int, cv::_InputArray const&, int, cv::Point_<int>)'
+ColorFilter.cpp:(.text+0x6a6): undefined reference to `cv::Mat::zeros(int, int, int)'
+ColorFilter.cpp:(.text+0x795): undefined reference to `cv::drawContours(cv::_InputOutputArray const&, cv::_InputArray const&, int, cv::Scalar_<double> const&, int, int, cv::_InputArray const&, int, cv::Point_<int>)'
+ColorFilter.cpp:(.text+0x827): undefined reference to `cv::Mat::copyTo(cv::_OutputArray const&, cv::_InputArray const&) const'
+CMakeFiles/ColorFilter.dir/src/ColorFilter.cpp.o: In function `ColorFilter::findGreen()':
+ColorFilter.cpp:(.text+0xb18): undefined reference to `cv::noArray()'
+ColorFilter.cpp:(.text+0xbb4): undefined reference to `cv::subtract(cv::_InputArray const&, cv::_InputArray const&, cv::_OutputArray const&, cv::_InputArray const&, int)'
+ColorFilter.cpp:(.text+0xc62): undefined reference to `cv::threshold(cv::_InputArray const&, cv::_OutputArray const&, double, double, int)'
+ColorFilter.cpp:(.text+0xd2a): undefined reference to `cv::findContours(cv::_InputOutputArray const&, cv::_OutputArray const&, cv::_OutputArray const&, int, int, cv::Point_<int>)'
+ColorFilter.cpp:(.text+0xddf): undefined reference to `cv::contourArea(cv::_InputArray const&, bool)'
+ColorFilter.cpp:(.text+0xe52): undefined reference to `cv::Mat::zeros(int, int, int)'
+ColorFilter.cpp:(.text+0xf5d): undefined reference to `cv::drawContours(cv::_InputOutputArray const&, cv::_InputArray const&, int, cv::Scalar_<double> const&, int, int, cv::_InputArray const&, int, cv::Point_<int>)'
+ColorFilter.cpp:(.text+0xfb6): undefined reference to `cv::Mat::zeros(int, int, int)'
+ColorFilter.cpp:(.text+0x10a5): undefined reference to `cv::drawContours(cv::_InputOutputArray const&, cv::_InputArray const&, int, cv::Scalar_<double> const&, int, int, cv::_InputArray const&, int, cv::Point_<int>)'
+ColorFilter.cpp:(.text+0x1137): undefined reference to `cv::Mat::copyTo(cv::_OutputArray const&, cv::_InputArray const&) const'
+CMakeFiles/ColorFilter.dir/src/ColorFilter.cpp.o: In function `ColorFilter::findRed()':
+ColorFilter.cpp:(.text+0x1428): undefined reference to `cv::noArray()'
+ColorFilter.cpp:(.text+0x14c4): undefined reference to `cv::subtract(cv::_InputArray const&, cv::_InputArray const&, cv::_OutputArray const&, cv::_InputArray const&, int)'
+ColorFilter.cpp:(.text+0x1572): undefined reference to `cv::threshold(cv::_InputArray const&, cv::_OutputArray const&, double, double, int)'
+ColorFilter.cpp:(.text+0x163a): undefined reference to `cv::findContours(cv::_InputOutputArray const&, cv::_OutputArray const&, cv::_OutputArray const&, int, int, cv::Point_<int>)'
+ColorFilter.cpp:(.text+0x16ef): undefined reference to `cv::contourArea(cv::_InputArray const&, bool)'
+ColorFilter.cpp:(.text+0x1762): undefined reference to `cv::Mat::zeros(int, int, int)'
+ColorFilter.cpp:(.text+0x186d): undefined reference to `cv::drawContours(cv::_InputOutputArray const&, cv::_InputArray const&, int, cv::Scalar_<double> const&, int, int, cv::_InputArray const&, int, cv::Point_<int>)'
+ColorFilter.cpp:(.text+0x18c6): undefined reference to `cv::Mat::zeros(int, int, int)'
+ColorFilter.cpp:(.text+0x19b5): undefined reference to `cv::drawContours(cv::_InputOutputArray const&, cv::_InputArray const&, int, cv::Scalar_<double> const&, int, int, cv::_InputArray const&, int, cv::Point_<int>)'
+ColorFilter.cpp:(.text+0x1a47): undefined reference to `cv::Mat::copyTo(cv::_OutputArray const&, cv::_InputArray const&) const'
+CMakeFiles/ColorFilter.dir/src/ColorFilter.cpp.o: In function `ColorFilter::findBGR()':
+ColorFilter.cpp:(.text+0x1d31): undefined reference to `cv::noArray()'
+ColorFilter.cpp:(.text+0x1daa): undefined reference to `cv::bitwise_or(cv::_InputArray const&, cv::_InputArray const&, cv::_OutputArray const&, cv::_InputArray const&)'
+ColorFilter.cpp:(.text+0x1ddc): undefined reference to `cv::noArray()'
+ColorFilter.cpp:(.text+0x1e48): undefined reference to `cv::bitwise_or(cv::_InputArray const&, cv::_InputArray const&, cv::_OutputArray const&, cv::_InputArray const&)'
+CMakeFiles/ColorFilter.dir/src/ColorFilter.cpp.o: In function `cv::String::String(char const*)':
+ColorFilter.cpp:(.text._ZN2cv6StringC2EPKc[_ZN2cv6StringC5EPKc]+0x4d): undefined reference to `cv::String::allocate(unsigned long)'
+CMakeFiles/ColorFilter.dir/src/ColorFilter.cpp.o: In function `cv::String::~String()':
+ColorFilter.cpp:(.text._ZN2cv6StringD2Ev[_ZN2cv6StringD5Ev]+0x14): undefined reference to `cv::String::deallocate()'
+CMakeFiles/ColorFilter.dir/src/ColorFilter.cpp.o: In function `cv::String::operator=(cv::String const&)':
+ColorFilter.cpp:(.text._ZN2cv6StringaSERKS0_[_ZN2cv6StringaSERKS0_]+0x28): undefined reference to `cv::String::deallocate()'
+CMakeFiles/ColorFilter.dir/src/ColorFilter.cpp.o: In function `cv::Mat::Mat(cv::Mat const&)':
+ColorFilter.cpp:(.text._ZN2cv3MatC2ERKS0_[_ZN2cv3MatC5ERKS0_]+0x183): undefined reference to `cv::Mat::copySize(cv::Mat const&)'
+CMakeFiles/ColorFilter.dir/src/ColorFilter.cpp.o: In function `cv::Mat::~Mat()':
+ColorFilter.cpp:(.text._ZN2cv3MatD2Ev[_ZN2cv3MatD5Ev]+0x39): undefined reference to `cv::fastFree(void*)'
+CMakeFiles/ColorFilter.dir/src/ColorFilter.cpp.o: In function `cv::Mat::operator=(cv::Mat const&)':
+ColorFilter.cpp:(.text._ZN2cv3MataSERKS0_[_ZN2cv3MataSERKS0_]+0x11b): undefined reference to `cv::Mat::copySize(cv::Mat const&)'
+CMakeFiles/ColorFilter.dir/src/ColorFilter.cpp.o: In function `cv::Mat::release()':
+ColorFilter.cpp:(.text._ZN2cv3Mat7releaseEv[_ZN2cv3Mat7releaseEv]+0x4b): undefined reference to `cv::Mat::deallocate()'
+collect2: error: ld returned 1 exit status
+make[2]: *** [/home/fri/Documents/julia/catkin_ws/devel/.private/opencv_hw/lib/opencv_hw/ColorFilter] Error 1
+make[1]: *** [CMakeFiles/ColorFilter.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+[01m[K/home/fri/Documents/julia/catkin_ws/src/opencv_hw/src/opencv_hw.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/fri/Documents/julia/catkin_ws/src/opencv_hw/src/opencv_hw.cpp:6:3:[m[K [01;31m[Kerror: [m[K‘[01m[KColorFilter[m[K’ was not declared in this scope
+   [01;31m[KColorFilter[m[K newColors = new ColorFilter();
+   [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/fri/Documents/julia/catkin_ws/src/opencv_hw/src/opencv_hw.cpp:7:3:[m[K [01;31m[Kerror: [m[K‘[01m[KRosInterface[m[K’ was not declared in this scope
+   [01;31m[KRosInterface[m[K  ic(newColors);
+   [01;31m[K^~~~~~~~~~~~[m[K
+make[2]: *** [CMakeFiles/opencv_hw.dir/src/opencv_hw.cpp.o] Error 1
+make[1]: *** [CMakeFiles/opencv_hw.dir/all] Error 2
+[01m[K/home/fri/Documents/julia/catkin_ws/src/opencv_hw/src/ROSInterface.cpp:10:39:[m[K [01;31m[Kerror: [m[K‘[01m[K_nh[m[K’ is not a type
+   image_transport::ImageTransport _it([01;31m[K_nh[m[K);
+                                       [01;31m[K^~~[m[K
+[01m[K/home/fri/Documents/julia/catkin_ws/src/opencv_hw/src/ROSInterface.cpp:19:3:[m[K [01;31m[Kerror: [m[K‘[01m[KColorFilter[m[K’ does not name a type
+   [01;31m[KColorFilter[m[K object;
+   [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/fri/Documents/julia/catkin_ws/src/opencv_hw/src/ROSInterface.cpp:22:28:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[Kobj[m[K’
+   ROSInterface(ColorFilter [01;31m[Kobj[m[K) : _it(_nh)  {
+                            [01;31m[K^~~[m[K
+[01m[K/home/fri/Documents/julia/catkin_ws/src/opencv_hw/src/ROSInterface.cpp:[m[K In member function ‘[01m[Kvoid ROSInterface::imageCb(const ImageConstPtr&)[m[K’:
+[01m[K/home/fri/Documents/julia/catkin_ws/src/opencv_hw/src/ROSInterface.cpp:39:5:[m[K [01;31m[Kerror: [m[K‘[01m[KVideoCapture[m[K’ was not declared in this scope
+     [01;31m[KVideoCapture[m[K cap("./three_cups.avi");
+     [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/fri/Documents/julia/catkin_ws/src/opencv_hw/src/ROSInterface.cpp:39:5:[m[K [01;36m[Knote: [m[Ksuggested alternative:
+In file included from [01m[K/usr/include/opencv2/highgui.hpp:51:0[m[K,
+                 from [01m[K/usr/include/opencv2/highgui/highgui.hpp:48[m[K,
+                 from [01m[K/home/fri/Documents/julia/catkin_ws/src/opencv_hw/src/ROSInterface.cpp:6[m[K:
+[01m[K/usr/include/opencv2/videoio.hpp:596:20:[m[K [01;36m[Knote: [m[K  ‘[01m[Kcv::VideoCapture[m[K’
+ class CV_EXPORTS_W [01;36m[KVideoCapture[m[K
+                    [01;36m[K^~~~~~~~~~~~[m[K
+[01m[K/home/fri/Documents/julia/catkin_ws/src/opencv_hw/src/ROSInterface.cpp:44:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kobject[m[K’ was not declared in this scope
+     [01;31m[Kobject[m[K.processImage(cv_ptr->image);
+     [01;31m[K^~~~~~[m[K
+[01m[K/home/fri/Documents/julia/catkin_ws/src/opencv_hw/src/ROSInterface.cpp:44:5:[m[K [01;36m[Knote: [m[Ksuggested alternative: ‘[01m[KcvRect[m[K’
+     [01;36m[Kobject[m[K.processImage(cv_ptr->image);
+     [01;36m[K^~~~~~[m[K
+     [32m[KcvRect[m[K
+[01m[K/home/fri/Documents/julia/catkin_ws/src/opencv_hw/src/ROSInterface.cpp:50:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kimshow[m[K’ was not declared in this scope
+     [01;31m[Kimshow[m[K("IMAGE", object.getBlueImage());
+     [01;31m[K^~~~~~[m[K
+[01m[K/home/fri/Documents/julia/catkin_ws/src/opencv_hw/src/ROSInterface.cpp:50:5:[m[K [01;36m[Knote: [m[Ksuggested alternative:
+In file included from [01m[K/usr/include/opencv2/highgui/highgui.hpp:48:0[m[K,
+                 from [01m[K/home/fri/Documents/julia/catkin_ws/src/opencv_hw/src/ROSInterface.cpp:6[m[K:
+[01m[K/usr/include/opencv2/highgui.hpp:569:17:[m[K [01;36m[Knote: [m[K  ‘[01m[Kcv::imshow[m[K’
+ CV_EXPORTS void [01;36m[Kimshow[m[K(const String& winname, const ogl::Texture2D& tex);
+                 [01;36m[K^~~~~~[m[K
+[01m[K/home/fri/Documents/julia/catkin_ws/src/opencv_hw/src/ROSInterface.cpp:51:5:[m[K [01;31m[Kerror: [m[K‘[01m[KwaitKey[m[K’ was not declared in this scope
+     [01;31m[KwaitKey[m[K(3);
+     [01;31m[K^~~~~~~[m[K
+[01m[K/home/fri/Documents/julia/catkin_ws/src/opencv_hw/src/ROSInterface.cpp:51:5:[m[K [01;36m[Knote: [m[Ksuggested alternative:
+In file included from [01m[K/usr/include/opencv2/highgui/highgui.hpp:48:0[m[K,
+                 from [01m[K/home/fri/Documents/julia/catkin_ws/src/opencv_hw/src/ROSInterface.cpp:6[m[K:
+[01m[K/usr/include/opencv2/highgui.hpp:353:18:[m[K [01;36m[Knote: [m[K  ‘[01m[Kcv::waitKey[m[K’
+ CV_EXPORTS_W int [01;36m[KwaitKey[m[K(int delay = 0);
+                  [01;36m[K^~~~~~~[m[K
+[01m[K/home/fri/Documents/julia/catkin_ws/src/opencv_hw/src/ROSInterface.cpp:59:5:[m[K [01;31m[Kerror: [m[K‘[01m[KMat[m[K’ was not declared in this scope
+     [01;31m[KMat[m[K frame = object.getGreenImage();
+     [01;31m[K^~~[m[K
+[01m[K/home/fri/Documents/julia/catkin_ws/src/opencv_hw/src/ROSInterface.cpp:59:5:[m[K [01;36m[Knote: [m[Ksuggested alternative:
+In file included from [01m[K/usr/include/opencv2/core.hpp:59:0[m[K,
+                 from [01m[K/usr/include/opencv2/core/core.hpp:48[m[K,
+                 from [01m[K/opt/ros/melodic/include/cv_bridge/cv_bridge.h:43[m[K,
+                 from [01m[K/home/fri/Documents/julia/catkin_ws/src/opencv_hw/src/ROSInterface.cpp:3[m[K:
+[01m[K/usr/include/opencv2/core/mat.hpp:740:18:[m[K [01;36m[Knote: [m[K  ‘[01m[Kcv::Mat[m[K’
+ class CV_EXPORTS [01;36m[KMat[m[K
+                  [01;36m[K^~~[m[K
+[01m[K/home/fri/Documents/julia/catkin_ws/src/opencv_hw/src/ROSInterface.cpp:60:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kcap[m[K’ was not declared in this scope
+     [01;31m[Kcap[m[K >> frame;
+     [01;31m[K^~~[m[K
+[01m[K/home/fri/Documents/julia/catkin_ws/src/opencv_hw/src/ROSInterface.cpp:60:12:[m[K [01;31m[Kerror: [m[K‘[01m[Kframe[m[K’ was not declared in this scope
+     cap >> [01;31m[Kframe[m[K;
+            [01;31m[K^~~~~[m[K
+[01m[K/home/fri/Documents/julia/catkin_ws/src/opencv_hw/src/ROSInterface.cpp:60:12:[m[K [01;36m[Knote: [m[Ksuggested alternative: ‘[01m[Kfree[m[K’
+     cap >> [01;36m[Kframe[m[K;
+            [01;36m[K^~~~~[m[K
+            [32m[Kfree[m[K
+[01m[K/home/fri/Documents/julia/catkin_ws/src/opencv_hw/src/ROSInterface.cpp:72:9:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[Kframe2[m[K’
+     Mat [01;31m[Kframe2[m[K = object.getBlueImage();
+         [01;31m[K^~~~~~[m[K
+[01m[K/home/fri/Documents/julia/catkin_ws/src/opencv_hw/src/ROSInterface.cpp:73:12:[m[K [01;31m[Kerror: [m[K‘[01m[Kframe2[m[K’ was not declared in this scope
+     cap >> [01;31m[Kframe2[m[K;
+            [01;31m[K^~~~~~[m[K
+[01m[K/home/fri/Documents/julia/catkin_ws/src/opencv_hw/src/ROSInterface.cpp:73:12:[m[K [01;36m[Knote: [m[Ksuggested alternative: ‘[01m[Kfmaf32[m[K’
+     cap >> [01;36m[Kframe2[m[K;
+            [01;36m[K^~~~~~[m[K
+            [32m[Kfmaf32[m[K
+[01m[K/home/fri/Documents/julia/catkin_ws/src/opencv_hw/src/ROSInterface.cpp:85:9:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[Kframe3[m[K’
+     Mat [01;31m[Kframe3[m[K = object.getRedImage();
+         [01;31m[K^~~~~~[m[K
+[01m[K/home/fri/Documents/julia/catkin_ws/src/opencv_hw/src/ROSInterface.cpp:86:12:[m[K [01;31m[Kerror: [m[K‘[01m[Kframe3[m[K’ was not declared in this scope
+     cap >> [01;31m[Kframe3[m[K;
+            [01;31m[K^~~~~~[m[K
+[01m[K/home/fri/Documents/julia/catkin_ws/src/opencv_hw/src/ROSInterface.cpp:86:12:[m[K [01;36m[Knote: [m[Ksuggested alternative: ‘[01m[Kfromfp[m[K’
+     cap >> [01;36m[Kframe3[m[K;
+            [01;36m[K^~~~~~[m[K
+            [32m[Kfromfp[m[K
+[01m[K/home/fri/Documents/julia/catkin_ws/src/opencv_hw/src/ROSInterface.cpp:99:9:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[Kframe4[m[K’
+     Mat [01;31m[Kframe4[m[K = object.getBGRImage();
+         [01;31m[K^~~~~~[m[K
+[01m[K/home/fri/Documents/julia/catkin_ws/src/opencv_hw/src/ROSInterface.cpp:100:12:[m[K [01;31m[Kerror: [m[K‘[01m[Kframe4[m[K’ was not declared in this scope
+     cap >> [01;31m[Kframe4[m[K;
+            [01;31m[K^~~~~~[m[K
+[01m[K/home/fri/Documents/julia/catkin_ws/src/opencv_hw/src/ROSInterface.cpp:100:12:[m[K [01;36m[Knote: [m[Ksuggested alternative: ‘[01m[Kfmaf64[m[K’
+     cap >> [01;36m[Kframe4[m[K;
+            [01;36m[K^~~~~~[m[K
+            [32m[Kfmaf64[m[K
+[01m[K/home/fri/Documents/julia/catkin_ws/src/opencv_hw/src/ROSInterface.cpp:105:9:[m[K [01;31m[Kerror: [m[K‘[01m[K_bgr[m[K’ was not declared in this scope
+         [01;31m[K_bgr[m[K.publish(msg);
+         [01;31m[K^~~~[m[K
+[01m[K/home/fri/Documents/julia/catkin_ws/src/opencv_hw/src/ROSInterface.cpp:105:9:[m[K [01;36m[Knote: [m[Ksuggested alternative: ‘[01m[K_brg[m[K’
+         [01;36m[K_bgr[m[K.publish(msg);
+         [01;36m[K^~~~[m[K
+         [32m[K_brg[m[K
+make[2]: *** [CMakeFiles/ROSInterface.dir/src/ROSInterface.cpp.o] Error 1
+make[1]: *** [CMakeFiles/ROSInterface.dir/all] Error 2
+make: *** [all] Error 2

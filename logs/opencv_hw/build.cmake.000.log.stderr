@@ -1,0 +1,22 @@
+[31m[1mCMake Error[0m at /home/fri/Documents/julia/catkin_ws/src/opencv_hw/CMakeLists.txt:138 (add_executable):
+  Cannot find source file:
+
+    src/opencv_pub.cpp
+
+  Tried extensions .c .C .c++ .cc .cpp .cxx .m .M .mm .h .hh .h++ .hm .hpp
+  .hxx .in .txx
+
+
+[31m[1mCMake Error[0m at /home/fri/Documents/julia/catkin_ws/src/opencv_hw/CMakeLists.txt:137 (add_executable):
+  Cannot find source file:
+
+    src/opencv_sub.cpp
+
+  Tried extensions .c .C .c++ .cc .cpp .cxx .m .M .mm .h .hh .h++ .hm .hpp
+  .hxx .in .txx
+
+
+CMake Error: CMake can not determine linker language for target: opencv_pub
+CMake Error: Cannot determine link language for target "opencv_pub".
+CMake Error: CMake can not determine linker language for target: opencv_sub
+CMake Error: Cannot determine link language for target "opencv_sub".

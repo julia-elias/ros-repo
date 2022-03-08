@@ -1,0 +1,13 @@
+[31m[1mCMake Error[0m at /home/fri/Documents/julia/catkin_ws/src/opencv_hw/CMakeLists.txt:155 (target_link_libraries):
+  Target "ColorFilter" of type EXECUTABLE may not be linked into another
+  target.  One may link only to STATIC or SHARED libraries, or to executables
+  with the ENABLE_EXPORTS property set.
+
+
+[31m[1mCMake Error[0m at /home/fri/Documents/julia/catkin_ws/src/opencv_hw/CMakeLists.txt:155 (target_link_libraries):
+  Target "ROSInterface" of type EXECUTABLE may not be linked into another
+  target.  One may link only to STATIC or SHARED libraries, or to executables
+  with the ENABLE_EXPORTS property set.
+
+
+make: *** [cmake_check_build_system] Error 1

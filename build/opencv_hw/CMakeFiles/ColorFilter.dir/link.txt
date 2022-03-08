@@ -1,0 +1,1 @@
+/usr/bin/c++    -rdynamic CMakeFiles/ColorFilter.dir/src/ColorFilter.cpp.o  -o /home/fri/Documents/julia/catkin_ws/devel/.private/opencv_hw/lib/opencv_hw/ColorFilter 

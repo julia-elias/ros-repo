@@ -1,0 +1,8 @@
+[01m[K/home/fri/Documents/julia/catkin_ws/src/opencv_hw/src/opencv_hw.cpp:3:10:[m[K [01;31m[Kfatal error: [m[Kopencv_hw/ROSInterface.cpp: No such file or directory
+ #include [01;31m[K<opencv_hw/ROSInterface.cpp>[m[K
+          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+make[2]: *** [CMakeFiles/opencv_hw.dir/src/opencv_hw.cpp.o] Error 1
+make[2]: *** Waiting for unfinished jobs....
+make[1]: *** [CMakeFiles/opencv_hw.dir/all] Error 2
+make: *** [all] Error 2

@@ -1,0 +1,6 @@
+[01m[K/home/fri/Documents/julia/catkin_ws/src/opencv_hw/src/ROSInterface.cpp:18:17:[m[K [01;31m[Kerror: [m[Kdeclaration of ‘[01m[K~ROSInterface[m[K’ as non-member
+   ~ROSInterface([01;31m[K)[m[K {
+                 [01;31m[K^[m[K
+make[2]: *** [CMakeFiles/opencv_hw.dir/src/ROSInterface.cpp.o] Error 1
+make[1]: *** [CMakeFiles/opencv_hw.dir/all] Error 2
+make: *** [all] Error 2

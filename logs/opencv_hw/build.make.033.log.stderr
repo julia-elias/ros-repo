@@ -1,0 +1,683 @@
+In file included from [01m[K/home/fri/Documents/julia/catkin_ws/src/opencv_hw/src/opencv_hw.cpp:3:0[m[K:
+[01m[K/home/fri/Documents/julia/catkin_ws/src/opencv_hw/src/ROSInterface.cpp:[m[K In constructor ‘[01m[KROSInterface::ROSInterface(ColorFilter)[m[K’:
+[01m[K/home/fri/Documents/julia/catkin_ws/src/opencv_hw/src/ROSInterface.cpp:26:57:[m[K [01;31m[Kerror: [m[K‘[01m[KImageConverter[m[K’ has not been declared
+     _sub = _it.subscribe("/kinect2/hd/image_color", 1, &[01;31m[KImageConverter[m[K::imageCb, this);
+                                                         [01;31m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/fri/Documents/julia/catkin_ws/src/opencv_hw/src/ROSInterface.cpp:[m[K In member function ‘[01m[Kvoid ROSInterface::imageCb(const ImageConstPtr&)[m[K’:
+[01m[K/home/fri/Documents/julia/catkin_ws/src/opencv_hw/src/ROSInterface.cpp:67:74:[m[K [01;31m[Kerror: [m[Kno match for ‘[01m[Koperator=[m[K’ (operand types are ‘[01m[Kconst ImageConstPtr {aka const boost::shared_ptr<const sensor_msgs::Image_<std::allocator<void> > >}[m[K’ and ‘[01m[Ksensor_msgs::ImagePtr {aka boost::shared_ptr<sensor_msgs::Image_<std::allocator<void> > >}[m[K’)
+         cv_bridge::CvImage(std_msgs::Header(), "bgr8", frame).toImageMsg([01;31m[K)[m[K;
+                                                                          [01;31m[K^[m[K
+In file included from [01m[K/usr/include/boost/shared_ptr.hpp:17:0[m[K,
+                 from [01m[K/opt/ros/melodic/include/ros/forwards.h:37[m[K,
+                 from [01m[K/opt/ros/melodic/include/ros/common.h:37[m[K,
+                 from [01m[K/opt/ros/melodic/include/ros/ros.h:43[m[K,
+                 from [01m[K/opt/ros/melodic/include/image_transport/publisher.h:38[m[K,
+                 from [01m[K/opt/ros/melodic/include/image_transport/image_transport.h:38[m[K,
+                 from [01m[K/home/fri/Documents/julia/catkin_ws/src/opencv_hw/src/opencv_hw.cpp:1[m[K:
+[01m[K/usr/include/boost/smart_ptr/shared_ptr.hpp:547:18:[m[K [01;36m[Knote: [m[Kcandidate: boost::shared_ptr<T>& boost::shared_ptr<T>::operator=(const boost::shared_ptr<T>&) [with T = const sensor_msgs::Image_<std::allocator<void> >] <near match>
+     shared_ptr & [01;36m[Koperator[m[K=( shared_ptr const & r ) BOOST_SP_NOEXCEPT
+                  [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/boost/smart_ptr/shared_ptr.hpp:547:18:[m[K [01;36m[Knote: [m[K  passing ‘[01m[Kconst ImageConstPtr* {aka const boost::shared_ptr<const sensor_msgs::Image_<std::allocator<void> > >*}[m[K’ as ‘[01m[Kthis[m[K’ argument discards qualifiers
+[01m[K/usr/include/boost/smart_ptr/shared_ptr.hpp:556:18:[m[K [01;36m[Knote: [m[Kcandidate: boost::shared_ptr<T>& boost::shared_ptr<T>::operator=(const boost::shared_ptr<Y>&) [with Y = sensor_msgs::Image_<std::allocator<void> >; T = const sensor_msgs::Image_<std::allocator<void> >] <near match>
+     shared_ptr & [01;36m[Koperator[m[K=(shared_ptr<Y> const & r) BOOST_SP_NOEXCEPT
+                  [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/boost/smart_ptr/shared_ptr.hpp:556:18:[m[K [01;36m[Knote: [m[K  passing ‘[01m[Kconst ImageConstPtr* {aka const boost::shared_ptr<const sensor_msgs::Image_<std::allocator<void> > >*}[m[K’ as ‘[01m[Kthis[m[K’ argument discards qualifiers
+[01m[K/usr/include/boost/smart_ptr/shared_ptr.hpp:567:18:[m[K [01;36m[Knote: [m[Kcandidate: template<class Y> boost::shared_ptr<T>& boost::shared_ptr<T>::operator=(std::auto_ptr<_Up>&) [with Y = Y; T = const sensor_msgs::Image_<std::allocator<void> >]
+     shared_ptr & [01;36m[Koperator[m[K=( std::auto_ptr<Y> & r )
+                  [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/boost/smart_ptr/shared_ptr.hpp:567:18:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/home/fri/Documents/julia/catkin_ws/src/opencv_hw/src/opencv_hw.cpp:3:0[m[K:
+[01m[K/home/fri/Documents/julia/catkin_ws/src/opencv_hw/src/ROSInterface.cpp:67:74:[m[K [01;36m[Knote: [m[K  ‘[01m[Ksensor_msgs::ImagePtr {aka boost::shared_ptr<sensor_msgs::Image_<std::allocator<void> > >}[m[K’ is not derived from ‘[01m[Kstd::auto_ptr<Y>[m[K’
+         cv_bridge::CvImage(std_msgs::Header(), "bgr8", frame).toImageMsg([01;36m[K)[m[K;
+                                                                          [01;36m[K^[m[K
+In file included from [01m[K/usr/include/boost/shared_ptr.hpp:17:0[m[K,
+                 from [01m[K/opt/ros/melodic/include/ros/forwards.h:37[m[K,
+                 from [01m[K/opt/ros/melodic/include/ros/common.h:37[m[K,
+                 from [01m[K/opt/ros/melodic/include/ros/ros.h:43[m[K,
+                 from [01m[K/opt/ros/melodic/include/image_transport/publisher.h:38[m[K,
+                 from [01m[K/opt/ros/melodic/include/image_transport/image_transport.h:38[m[K,
+                 from [01m[K/home/fri/Documents/julia/catkin_ws/src/opencv_hw/src/opencv_hw.cpp:1[m[K:
+[01m[K/usr/include/boost/smart_ptr/shared_ptr.hpp:576:18:[m[K [01;36m[Knote: [m[Kcandidate: template<class Y> boost::shared_ptr<T>& boost::shared_ptr<T>::operator=(std::auto_ptr<_Up>&&) [with Y = Y; T = const sensor_msgs::Image_<std::allocator<void> >]
+     shared_ptr & [01;36m[Koperator[m[K=( std::auto_ptr<Y> && r )
+                  [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/boost/smart_ptr/shared_ptr.hpp:576:18:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/home/fri/Documents/julia/catkin_ws/src/opencv_hw/src/opencv_hw.cpp:3:0[m[K:
+[01m[K/home/fri/Documents/julia/catkin_ws/src/opencv_hw/src/ROSInterface.cpp:67:74:[m[K [01;36m[Knote: [m[K  ‘[01m[Ksensor_msgs::ImagePtr {aka boost::shared_ptr<sensor_msgs::Image_<std::allocator<void> > >}[m[K’ is not derived from ‘[01m[Kstd::auto_ptr<Y>[m[K’
+         cv_bridge::CvImage(std_msgs::Header(), "bgr8", frame).toImageMsg([01;36m[K)[m[K;
+                                                                          [01;36m[K^[m[K
+In file included from [01m[K/usr/include/boost/shared_ptr.hpp:17:0[m[K,
+                 from [01m[K/opt/ros/melodic/include/ros/forwards.h:37[m[K,
+                 from [01m[K/opt/ros/melodic/include/ros/common.h:37[m[K,
+                 from [01m[K/opt/ros/melodic/include/ros/ros.h:43[m[K,
+                 from [01m[K/opt/ros/melodic/include/image_transport/publisher.h:38[m[K,
+                 from [01m[K/opt/ros/melodic/include/image_transport/image_transport.h:38[m[K,
+                 from [01m[K/home/fri/Documents/julia/catkin_ws/src/opencv_hw/src/opencv_hw.cpp:1[m[K:
+[01m[K/usr/include/boost/smart_ptr/shared_ptr.hpp:598:18:[m[K [01;36m[Knote: [m[Kcandidate: template<class Y, class D> boost::shared_ptr<T>& boost::shared_ptr<T>::operator=(std::unique_ptr<_Up, _Ep>&&) [with Y = Y; D = D; T = const sensor_msgs::Image_<std::allocator<void> >]
+     shared_ptr & [01;36m[Koperator[m[K=( std::unique_ptr<Y, D> && r )
+                  [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/boost/smart_ptr/shared_ptr.hpp:598:18:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/home/fri/Documents/julia/catkin_ws/src/opencv_hw/src/opencv_hw.cpp:3:0[m[K:
+[01m[K/home/fri/Documents/julia/catkin_ws/src/opencv_hw/src/ROSInterface.cpp:67:74:[m[K [01;36m[Knote: [m[K  ‘[01m[Ksensor_msgs::ImagePtr {aka boost::shared_ptr<sensor_msgs::Image_<std::allocator<void> > >}[m[K’ is not derived from ‘[01m[Kstd::unique_ptr<_Tp, _Dp>[m[K’
+         cv_bridge::CvImage(std_msgs::Header(), "bgr8", frame).toImageMsg([01;36m[K)[m[K;
+                                                                          [01;36m[K^[m[K
+In file included from [01m[K/usr/include/boost/shared_ptr.hpp:17:0[m[K,
+                 from [01m[K/opt/ros/melodic/include/ros/forwards.h:37[m[K,
+                 from [01m[K/opt/ros/melodic/include/ros/common.h:37[m[K,
+                 from [01m[K/opt/ros/melodic/include/ros/ros.h:43[m[K,
+                 from [01m[K/opt/ros/melodic/include/image_transport/publisher.h:38[m[K,
+                 from [01m[K/opt/ros/melodic/include/image_transport/image_transport.h:38[m[K,
+                 from [01m[K/home/fri/Documents/julia/catkin_ws/src/opencv_hw/src/opencv_hw.cpp:1[m[K:
+[01m[K/usr/include/boost/smart_ptr/shared_ptr.hpp:607:18:[m[K [01;36m[Knote: [m[Kcandidate: template<class Y, class D> boost::shared_ptr<T>& boost::shared_ptr<T>::operator=(boost::movelib::unique_ptr<Y, D>) [with Y = Y; D = D; T = const sensor_msgs::Image_<std::allocator<void> >]
+     shared_ptr & [01;36m[Koperator[m[K=( boost::movelib::unique_ptr<Y, D> r )
+                  [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/boost/smart_ptr/shared_ptr.hpp:607:18:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/home/fri/Documents/julia/catkin_ws/src/opencv_hw/src/opencv_hw.cpp:3:0[m[K:
+[01m[K/home/fri/Documents/julia/catkin_ws/src/opencv_hw/src/ROSInterface.cpp:67:74:[m[K [01;36m[Knote: [m[K  ‘[01m[Kboost::shared_ptr<sensor_msgs::Image_<std::allocator<void> > >[m[K’ is not derived from ‘[01m[Kboost::movelib::unique_ptr<Y, D>[m[K’
+         cv_bridge::CvImage(std_msgs::Header(), "bgr8", frame).toImageMsg([01;36m[K)[m[K;
+                                                                          [01;36m[K^[m[K
+In file included from [01m[K/usr/include/boost/shared_ptr.hpp:17:0[m[K,
+                 from [01m[K/opt/ros/melodic/include/ros/forwards.h:37[m[K,
+                 from [01m[K/opt/ros/melodic/include/ros/common.h:37[m[K,
+                 from [01m[K/opt/ros/melodic/include/ros/ros.h:43[m[K,
+                 from [01m[K/opt/ros/melodic/include/image_transport/publisher.h:38[m[K,
+                 from [01m[K/opt/ros/melodic/include/image_transport/image_transport.h:38[m[K,
+                 from [01m[K/home/fri/Documents/julia/catkin_ws/src/opencv_hw/src/opencv_hw.cpp:1[m[K:
+[01m[K/usr/include/boost/smart_ptr/shared_ptr.hpp:658:18:[m[K [01;36m[Knote: [m[Kcandidate: boost::shared_ptr<T>& boost::shared_ptr<T>::operator=(boost::shared_ptr<T>&&) [with T = const sensor_msgs::Image_<std::allocator<void> >] <near match>
+     shared_ptr & [01;36m[Koperator[m[K=( shared_ptr && r ) BOOST_SP_NOEXCEPT
+                  [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/boost/smart_ptr/shared_ptr.hpp:658:18:[m[K [01;36m[Knote: [m[K  passing ‘[01m[Kconst ImageConstPtr* {aka const boost::shared_ptr<const sensor_msgs::Image_<std::allocator<void> > >*}[m[K’ as ‘[01m[Kthis[m[K’ argument discards qualifiers
+[01m[K/usr/include/boost/smart_ptr/shared_ptr.hpp:665:18:[m[K [01;36m[Knote: [m[Kcandidate: boost::shared_ptr<T>& boost::shared_ptr<T>::operator=(boost::shared_ptr<Y>&&) [with Y = sensor_msgs::Image_<std::allocator<void> >; T = const sensor_msgs::Image_<std::allocator<void> >] <near match>
+     shared_ptr & [01;36m[Koperator[m[K=( shared_ptr<Y> && r ) BOOST_SP_NOEXCEPT
+                  [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/boost/smart_ptr/shared_ptr.hpp:665:18:[m[K [01;36m[Knote: [m[K  passing ‘[01m[Kconst ImageConstPtr* {aka const boost::shared_ptr<const sensor_msgs::Image_<std::allocator<void> > >*}[m[K’ as ‘[01m[Kthis[m[K’ argument discards qualifiers
+[01m[K/usr/include/boost/smart_ptr/shared_ptr.hpp:683:18:[m[K [01;36m[Knote: [m[Kcandidate: boost::shared_ptr<T>& boost::shared_ptr<T>::operator=(boost::detail::sp_nullptr_t) [with T = const sensor_msgs::Image_<std::allocator<void> >; boost::detail::sp_nullptr_t = std::nullptr_t]
+     shared_ptr & [01;36m[Koperator[m[K=( boost::detail::sp_nullptr_t ) BOOST_SP_NOEXCEPT
+                  [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/boost/smart_ptr/shared_ptr.hpp:683:18:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Ksensor_msgs::ImagePtr {aka boost::shared_ptr<sensor_msgs::Image_<std::allocator<void> > >}[m[K’ to ‘[01m[Kboost::detail::sp_nullptr_t {aka std::nullptr_t}[m[K’
+In file included from [01m[K/home/fri/Documents/julia/catkin_ws/src/opencv_hw/src/opencv_hw.cpp:3:0[m[K:
+[01m[K/home/fri/Documents/julia/catkin_ws/src/opencv_hw/src/ROSInterface.cpp:80:75:[m[K [01;31m[Kerror: [m[Kno match for ‘[01m[Koperator=[m[K’ (operand types are ‘[01m[Kconst ImageConstPtr {aka const boost::shared_ptr<const sensor_msgs::Image_<std::allocator<void> > >}[m[K’ and ‘[01m[Ksensor_msgs::ImagePtr {aka boost::shared_ptr<sensor_msgs::Image_<std::allocator<void> > >}[m[K’)
+         cv_bridge::CvImage(std_msgs::Header(), "bgr8", frame2).toImageMsg([01;31m[K)[m[K;
+                                                                           [01;31m[K^[m[K
+In file included from [01m[K/usr/include/boost/shared_ptr.hpp:17:0[m[K,
+                 from [01m[K/opt/ros/melodic/include/ros/forwards.h:37[m[K,
+                 from [01m[K/opt/ros/melodic/include/ros/common.h:37[m[K,
+                 from [01m[K/opt/ros/melodic/include/ros/ros.h:43[m[K,
+                 from [01m[K/opt/ros/melodic/include/image_transport/publisher.h:38[m[K,
+                 from [01m[K/opt/ros/melodic/include/image_transport/image_transport.h:38[m[K,
+                 from [01m[K/home/fri/Documents/julia/catkin_ws/src/opencv_hw/src/opencv_hw.cpp:1[m[K:
+[01m[K/usr/include/boost/smart_ptr/shared_ptr.hpp:547:18:[m[K [01;36m[Knote: [m[Kcandidate: boost::shared_ptr<T>& boost::shared_ptr<T>::operator=(const boost::shared_ptr<T>&) [with T = const sensor_msgs::Image_<std::allocator<void> >] <near match>
+     shared_ptr & [01;36m[Koperator[m[K=( shared_ptr const & r ) BOOST_SP_NOEXCEPT
+                  [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/boost/smart_ptr/shared_ptr.hpp:547:18:[m[K [01;36m[Knote: [m[K  passing ‘[01m[Kconst ImageConstPtr* {aka const boost::shared_ptr<const sensor_msgs::Image_<std::allocator<void> > >*}[m[K’ as ‘[01m[Kthis[m[K’ argument discards qualifiers
+[01m[K/usr/include/boost/smart_ptr/shared_ptr.hpp:556:18:[m[K [01;36m[Knote: [m[Kcandidate: boost::shared_ptr<T>& boost::shared_ptr<T>::operator=(const boost::shared_ptr<Y>&) [with Y = sensor_msgs::Image_<std::allocator<void> >; T = const sensor_msgs::Image_<std::allocator<void> >] <near match>
+     shared_ptr & [01;36m[Koperator[m[K=(shared_ptr<Y> const & r) BOOST_SP_NOEXCEPT
+                  [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/boost/smart_ptr/shared_ptr.hpp:556:18:[m[K [01;36m[Knote: [m[K  passing ‘[01m[Kconst ImageConstPtr* {aka const boost::shared_ptr<const sensor_msgs::Image_<std::allocator<void> > >*}[m[K’ as ‘[01m[Kthis[m[K’ argument discards qualifiers
+[01m[K/usr/include/boost/smart_ptr/shared_ptr.hpp:567:18:[m[K [01;36m[Knote: [m[Kcandidate: template<class Y> boost::shared_ptr<T>& boost::shared_ptr<T>::operator=(std::auto_ptr<_Up>&) [with Y = Y; T = const sensor_msgs::Image_<std::allocator<void> >]
+     shared_ptr & [01;36m[Koperator[m[K=( std::auto_ptr<Y> & r )
+                  [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/boost/smart_ptr/shared_ptr.hpp:567:18:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/home/fri/Documents/julia/catkin_ws/src/opencv_hw/src/opencv_hw.cpp:3:0[m[K:
+[01m[K/home/fri/Documents/julia/catkin_ws/src/opencv_hw/src/ROSInterface.cpp:80:75:[m[K [01;36m[Knote: [m[K  ‘[01m[Ksensor_msgs::ImagePtr {aka boost::shared_ptr<sensor_msgs::Image_<std::allocator<void> > >}[m[K’ is not derived from ‘[01m[Kstd::auto_ptr<Y>[m[K’
+         cv_bridge::CvImage(std_msgs::Header(), "bgr8", frame2).toImageMsg([01;36m[K)[m[K;
+                                                                           [01;36m[K^[m[K
+In file included from [01m[K/usr/include/boost/shared_ptr.hpp:17:0[m[K,
+                 from [01m[K/opt/ros/melodic/include/ros/forwards.h:37[m[K,
+                 from [01m[K/opt/ros/melodic/include/ros/common.h:37[m[K,
+                 from [01m[K/opt/ros/melodic/include/ros/ros.h:43[m[K,
+                 from [01m[K/opt/ros/melodic/include/image_transport/publisher.h:38[m[K,
+                 from [01m[K/opt/ros/melodic/include/image_transport/image_transport.h:38[m[K,
+                 from [01m[K/home/fri/Documents/julia/catkin_ws/src/opencv_hw/src/opencv_hw.cpp:1[m[K:
+[01m[K/usr/include/boost/smart_ptr/shared_ptr.hpp:576:18:[m[K [01;36m[Knote: [m[Kcandidate: template<class Y> boost::shared_ptr<T>& boost::shared_ptr<T>::operator=(std::auto_ptr<_Up>&&) [with Y = Y; T = const sensor_msgs::Image_<std::allocator<void> >]
+     shared_ptr & [01;36m[Koperator[m[K=( std::auto_ptr<Y> && r )
+                  [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/boost/smart_ptr/shared_ptr.hpp:576:18:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/home/fri/Documents/julia/catkin_ws/src/opencv_hw/src/opencv_hw.cpp:3:0[m[K:
+[01m[K/home/fri/Documents/julia/catkin_ws/src/opencv_hw/src/ROSInterface.cpp:80:75:[m[K [01;36m[Knote: [m[K  ‘[01m[Ksensor_msgs::ImagePtr {aka boost::shared_ptr<sensor_msgs::Image_<std::allocator<void> > >}[m[K’ is not derived from ‘[01m[Kstd::auto_ptr<Y>[m[K’
+         cv_bridge::CvImage(std_msgs::Header(), "bgr8", frame2).toImageMsg([01;36m[K)[m[K;
+                                                                           [01;36m[K^[m[K
+In file included from [01m[K/usr/include/boost/shared_ptr.hpp:17:0[m[K,
+                 from [01m[K/opt/ros/melodic/include/ros/forwards.h:37[m[K,
+                 from [01m[K/opt/ros/melodic/include/ros/common.h:37[m[K,
+                 from [01m[K/opt/ros/melodic/include/ros/ros.h:43[m[K,
+                 from [01m[K/opt/ros/melodic/include/image_transport/publisher.h:38[m[K,
+                 from [01m[K/opt/ros/melodic/include/image_transport/image_transport.h:38[m[K,
+                 from [01m[K/home/fri/Documents/julia/catkin_ws/src/opencv_hw/src/opencv_hw.cpp:1[m[K:
+[01m[K/usr/include/boost/smart_ptr/shared_ptr.hpp:598:18:[m[K [01;36m[Knote: [m[Kcandidate: template<class Y, class D> boost::shared_ptr<T>& boost::shared_ptr<T>::operator=(std::unique_ptr<_Up, _Ep>&&) [with Y = Y; D = D; T = const sensor_msgs::Image_<std::allocator<void> >]
+     shared_ptr & [01;36m[Koperator[m[K=( std::unique_ptr<Y, D> && r )
+                  [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/boost/smart_ptr/shared_ptr.hpp:598:18:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/home/fri/Documents/julia/catkin_ws/src/opencv_hw/src/opencv_hw.cpp:3:0[m[K:
+[01m[K/home/fri/Documents/julia/catkin_ws/src/opencv_hw/src/ROSInterface.cpp:80:75:[m[K [01;36m[Knote: [m[K  ‘[01m[Ksensor_msgs::ImagePtr {aka boost::shared_ptr<sensor_msgs::Image_<std::allocator<void> > >}[m[K’ is not derived from ‘[01m[Kstd::unique_ptr<_Tp, _Dp>[m[K’
+         cv_bridge::CvImage(std_msgs::Header(), "bgr8", frame2).toImageMsg([01;36m[K)[m[K;
+                                                                           [01;36m[K^[m[K
+In file included from [01m[K/usr/include/boost/shared_ptr.hpp:17:0[m[K,
+                 from [01m[K/opt/ros/melodic/include/ros/forwards.h:37[m[K,
+                 from [01m[K/opt/ros/melodic/include/ros/common.h:37[m[K,
+                 from [01m[K/opt/ros/melodic/include/ros/ros.h:43[m[K,
+                 from [01m[K/opt/ros/melodic/include/image_transport/publisher.h:38[m[K,
+                 from [01m[K/opt/ros/melodic/include/image_transport/image_transport.h:38[m[K,
+                 from [01m[K/home/fri/Documents/julia/catkin_ws/src/opencv_hw/src/opencv_hw.cpp:1[m[K:
+[01m[K/usr/include/boost/smart_ptr/shared_ptr.hpp:607:18:[m[K [01;36m[Knote: [m[Kcandidate: template<class Y, class D> boost::shared_ptr<T>& boost::shared_ptr<T>::operator=(boost::movelib::unique_ptr<Y, D>) [with Y = Y; D = D; T = const sensor_msgs::Image_<std::allocator<void> >]
+     shared_ptr & [01;36m[Koperator[m[K=( boost::movelib::unique_ptr<Y, D> r )
+                  [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/boost/smart_ptr/shared_ptr.hpp:607:18:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/home/fri/Documents/julia/catkin_ws/src/opencv_hw/src/opencv_hw.cpp:3:0[m[K:
+[01m[K/home/fri/Documents/julia/catkin_ws/src/opencv_hw/src/ROSInterface.cpp:80:75:[m[K [01;36m[Knote: [m[K  ‘[01m[Kboost::shared_ptr<sensor_msgs::Image_<std::allocator<void> > >[m[K’ is not derived from ‘[01m[Kboost::movelib::unique_ptr<Y, D>[m[K’
+         cv_bridge::CvImage(std_msgs::Header(), "bgr8", frame2).toImageMsg([01;36m[K)[m[K;
+                                                                           [01;36m[K^[m[K
+In file included from [01m[K/usr/include/boost/shared_ptr.hpp:17:0[m[K,
+                 from [01m[K/opt/ros/melodic/include/ros/forwards.h:37[m[K,
+                 from [01m[K/opt/ros/melodic/include/ros/common.h:37[m[K,
+                 from [01m[K/opt/ros/melodic/include/ros/ros.h:43[m[K,
+                 from [01m[K/opt/ros/melodic/include/image_transport/publisher.h:38[m[K,
+                 from [01m[K/opt/ros/melodic/include/image_transport/image_transport.h:38[m[K,
+                 from [01m[K/home/fri/Documents/julia/catkin_ws/src/opencv_hw/src/opencv_hw.cpp:1[m[K:
+[01m[K/usr/include/boost/smart_ptr/shared_ptr.hpp:658:18:[m[K [01;36m[Knote: [m[Kcandidate: boost::shared_ptr<T>& boost::shared_ptr<T>::operator=(boost::shared_ptr<T>&&) [with T = const sensor_msgs::Image_<std::allocator<void> >] <near match>
+     shared_ptr & [01;36m[Koperator[m[K=( shared_ptr && r ) BOOST_SP_NOEXCEPT
+                  [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/boost/smart_ptr/shared_ptr.hpp:658:18:[m[K [01;36m[Knote: [m[K  passing ‘[01m[Kconst ImageConstPtr* {aka const boost::shared_ptr<const sensor_msgs::Image_<std::allocator<void> > >*}[m[K’ as ‘[01m[Kthis[m[K’ argument discards qualifiers
+[01m[K/usr/include/boost/smart_ptr/shared_ptr.hpp:665:18:[m[K [01;36m[Knote: [m[Kcandidate: boost::shared_ptr<T>& boost::shared_ptr<T>::operator=(boost::shared_ptr<Y>&&) [with Y = sensor_msgs::Image_<std::allocator<void> >; T = const sensor_msgs::Image_<std::allocator<void> >] <near match>
+     shared_ptr & [01;36m[Koperator[m[K=( shared_ptr<Y> && r ) BOOST_SP_NOEXCEPT
+                  [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/boost/smart_ptr/shared_ptr.hpp:665:18:[m[K [01;36m[Knote: [m[K  passing ‘[01m[Kconst ImageConstPtr* {aka const boost::shared_ptr<const sensor_msgs::Image_<std::allocator<void> > >*}[m[K’ as ‘[01m[Kthis[m[K’ argument discards qualifiers
+[01m[K/usr/include/boost/smart_ptr/shared_ptr.hpp:683:18:[m[K [01;36m[Knote: [m[Kcandidate: boost::shared_ptr<T>& boost::shared_ptr<T>::operator=(boost::detail::sp_nullptr_t) [with T = const sensor_msgs::Image_<std::allocator<void> >; boost::detail::sp_nullptr_t = std::nullptr_t]
+     shared_ptr & [01;36m[Koperator[m[K=( boost::detail::sp_nullptr_t ) BOOST_SP_NOEXCEPT
+                  [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/boost/smart_ptr/shared_ptr.hpp:683:18:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Ksensor_msgs::ImagePtr {aka boost::shared_ptr<sensor_msgs::Image_<std::allocator<void> > >}[m[K’ to ‘[01m[Kboost::detail::sp_nullptr_t {aka std::nullptr_t}[m[K’
+In file included from [01m[K/home/fri/Documents/julia/catkin_ws/src/opencv_hw/src/opencv_hw.cpp:3:0[m[K:
+[01m[K/home/fri/Documents/julia/catkin_ws/src/opencv_hw/src/ROSInterface.cpp:93:75:[m[K [01;31m[Kerror: [m[Kno match for ‘[01m[Koperator=[m[K’ (operand types are ‘[01m[Kconst ImageConstPtr {aka const boost::shared_ptr<const sensor_msgs::Image_<std::allocator<void> > >}[m[K’ and ‘[01m[Ksensor_msgs::ImagePtr {aka boost::shared_ptr<sensor_msgs::Image_<std::allocator<void> > >}[m[K’)
+         cv_bridge::CvImage(std_msgs::Header(), "bgr8", frame3).toImageMsg([01;31m[K)[m[K;
+                                                                           [01;31m[K^[m[K
+In file included from [01m[K/usr/include/boost/shared_ptr.hpp:17:0[m[K,
+                 from [01m[K/opt/ros/melodic/include/ros/forwards.h:37[m[K,
+                 from [01m[K/opt/ros/melodic/include/ros/common.h:37[m[K,
+                 from [01m[K/opt/ros/melodic/include/ros/ros.h:43[m[K,
+                 from [01m[K/opt/ros/melodic/include/image_transport/publisher.h:38[m[K,
+                 from [01m[K/opt/ros/melodic/include/image_transport/image_transport.h:38[m[K,
+                 from [01m[K/home/fri/Documents/julia/catkin_ws/src/opencv_hw/src/opencv_hw.cpp:1[m[K:
+[01m[K/usr/include/boost/smart_ptr/shared_ptr.hpp:547:18:[m[K [01;36m[Knote: [m[Kcandidate: boost::shared_ptr<T>& boost::shared_ptr<T>::operator=(const boost::shared_ptr<T>&) [with T = const sensor_msgs::Image_<std::allocator<void> >] <near match>
+     shared_ptr & [01;36m[Koperator[m[K=( shared_ptr const & r ) BOOST_SP_NOEXCEPT
+                  [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/boost/smart_ptr/shared_ptr.hpp:547:18:[m[K [01;36m[Knote: [m[K  passing ‘[01m[Kconst ImageConstPtr* {aka const boost::shared_ptr<const sensor_msgs::Image_<std::allocator<void> > >*}[m[K’ as ‘[01m[Kthis[m[K’ argument discards qualifiers
+[01m[K/usr/include/boost/smart_ptr/shared_ptr.hpp:556:18:[m[K [01;36m[Knote: [m[Kcandidate: boost::shared_ptr<T>& boost::shared_ptr<T>::operator=(const boost::shared_ptr<Y>&) [with Y = sensor_msgs::Image_<std::allocator<void> >; T = const sensor_msgs::Image_<std::allocator<void> >] <near match>
+     shared_ptr & [01;36m[Koperator[m[K=(shared_ptr<Y> const & r) BOOST_SP_NOEXCEPT
+                  [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/boost/smart_ptr/shared_ptr.hpp:556:18:[m[K [01;36m[Knote: [m[K  passing ‘[01m[Kconst ImageConstPtr* {aka const boost::shared_ptr<const sensor_msgs::Image_<std::allocator<void> > >*}[m[K’ as ‘[01m[Kthis[m[K’ argument discards qualifiers
+[01m[K/usr/include/boost/smart_ptr/shared_ptr.hpp:567:18:[m[K [01;36m[Knote: [m[Kcandidate: template<class Y> boost::shared_ptr<T>& boost::shared_ptr<T>::operator=(std::auto_ptr<_Up>&) [with Y = Y; T = const sensor_msgs::Image_<std::allocator<void> >]
+     shared_ptr & [01;36m[Koperator[m[K=( std::auto_ptr<Y> & r )
+                  [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/boost/smart_ptr/shared_ptr.hpp:567:18:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/home/fri/Documents/julia/catkin_ws/src/opencv_hw/src/opencv_hw.cpp:3:0[m[K:
+[01m[K/home/fri/Documents/julia/catkin_ws/src/opencv_hw/src/ROSInterface.cpp:93:75:[m[K [01;36m[Knote: [m[K  ‘[01m[Ksensor_msgs::ImagePtr {aka boost::shared_ptr<sensor_msgs::Image_<std::allocator<void> > >}[m[K’ is not derived from ‘[01m[Kstd::auto_ptr<Y>[m[K’
+         cv_bridge::CvImage(std_msgs::Header(), "bgr8", frame3).toImageMsg([01;36m[K)[m[K;
+                                                                           [01;36m[K^[m[K
+In file included from [01m[K/usr/include/boost/shared_ptr.hpp:17:0[m[K,
+                 from [01m[K/opt/ros/melodic/include/ros/forwards.h:37[m[K,
+                 from [01m[K/opt/ros/melodic/include/ros/common.h:37[m[K,
+                 from [01m[K/opt/ros/melodic/include/ros/ros.h:43[m[K,
+                 from [01m[K/opt/ros/melodic/include/image_transport/publisher.h:38[m[K,
+                 from [01m[K/opt/ros/melodic/include/image_transport/image_transport.h:38[m[K,
+                 from [01m[K/home/fri/Documents/julia/catkin_ws/src/opencv_hw/src/opencv_hw.cpp:1[m[K:
+[01m[K/usr/include/boost/smart_ptr/shared_ptr.hpp:576:18:[m[K [01;36m[Knote: [m[Kcandidate: template<class Y> boost::shared_ptr<T>& boost::shared_ptr<T>::operator=(std::auto_ptr<_Up>&&) [with Y = Y; T = const sensor_msgs::Image_<std::allocator<void> >]
+     shared_ptr & [01;36m[Koperator[m[K=( std::auto_ptr<Y> && r )
+                  [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/boost/smart_ptr/shared_ptr.hpp:576:18:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/home/fri/Documents/julia/catkin_ws/src/opencv_hw/src/opencv_hw.cpp:3:0[m[K:
+[01m[K/home/fri/Documents/julia/catkin_ws/src/opencv_hw/src/ROSInterface.cpp:93:75:[m[K [01;36m[Knote: [m[K  ‘[01m[Ksensor_msgs::ImagePtr {aka boost::shared_ptr<sensor_msgs::Image_<std::allocator<void> > >}[m[K’ is not derived from ‘[01m[Kstd::auto_ptr<Y>[m[K’
+         cv_bridge::CvImage(std_msgs::Header(), "bgr8", frame3).toImageMsg([01;36m[K)[m[K;
+                                                                           [01;36m[K^[m[K
+In file included from [01m[K/usr/include/boost/shared_ptr.hpp:17:0[m[K,
+                 from [01m[K/opt/ros/melodic/include/ros/forwards.h:37[m[K,
+                 from [01m[K/opt/ros/melodic/include/ros/common.h:37[m[K,
+                 from [01m[K/opt/ros/melodic/include/ros/ros.h:43[m[K,
+                 from [01m[K/opt/ros/melodic/include/image_transport/publisher.h:38[m[K,
+                 from [01m[K/opt/ros/melodic/include/image_transport/image_transport.h:38[m[K,
+                 from [01m[K/home/fri/Documents/julia/catkin_ws/src/opencv_hw/src/opencv_hw.cpp:1[m[K:
+[01m[K/usr/include/boost/smart_ptr/shared_ptr.hpp:598:18:[m[K [01;36m[Knote: [m[Kcandidate: template<class Y, class D> boost::shared_ptr<T>& boost::shared_ptr<T>::operator=(std::unique_ptr<_Up, _Ep>&&) [with Y = Y; D = D; T = const sensor_msgs::Image_<std::allocator<void> >]
+     shared_ptr & [01;36m[Koperator[m[K=( std::unique_ptr<Y, D> && r )
+                  [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/boost/smart_ptr/shared_ptr.hpp:598:18:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/home/fri/Documents/julia/catkin_ws/src/opencv_hw/src/opencv_hw.cpp:3:0[m[K:
+[01m[K/home/fri/Documents/julia/catkin_ws/src/opencv_hw/src/ROSInterface.cpp:93:75:[m[K [01;36m[Knote: [m[K  ‘[01m[Ksensor_msgs::ImagePtr {aka boost::shared_ptr<sensor_msgs::Image_<std::allocator<void> > >}[m[K’ is not derived from ‘[01m[Kstd::unique_ptr<_Tp, _Dp>[m[K’
+         cv_bridge::CvImage(std_msgs::Header(), "bgr8", frame3).toImageMsg([01;36m[K)[m[K;
+                                                                           [01;36m[K^[m[K
+In file included from [01m[K/usr/include/boost/shared_ptr.hpp:17:0[m[K,
+                 from [01m[K/opt/ros/melodic/include/ros/forwards.h:37[m[K,
+                 from [01m[K/opt/ros/melodic/include/ros/common.h:37[m[K,
+                 from [01m[K/opt/ros/melodic/include/ros/ros.h:43[m[K,
+                 from [01m[K/opt/ros/melodic/include/image_transport/publisher.h:38[m[K,
+                 from [01m[K/opt/ros/melodic/include/image_transport/image_transport.h:38[m[K,
+                 from [01m[K/home/fri/Documents/julia/catkin_ws/src/opencv_hw/src/opencv_hw.cpp:1[m[K:
+[01m[K/usr/include/boost/smart_ptr/shared_ptr.hpp:607:18:[m[K [01;36m[Knote: [m[Kcandidate: template<class Y, class D> boost::shared_ptr<T>& boost::shared_ptr<T>::operator=(boost::movelib::unique_ptr<Y, D>) [with Y = Y; D = D; T = const sensor_msgs::Image_<std::allocator<void> >]
+     shared_ptr & [01;36m[Koperator[m[K=( boost::movelib::unique_ptr<Y, D> r )
+                  [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/boost/smart_ptr/shared_ptr.hpp:607:18:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/home/fri/Documents/julia/catkin_ws/src/opencv_hw/src/opencv_hw.cpp:3:0[m[K:
+[01m[K/home/fri/Documents/julia/catkin_ws/src/opencv_hw/src/ROSInterface.cpp:93:75:[m[K [01;36m[Knote: [m[K  ‘[01m[Kboost::shared_ptr<sensor_msgs::Image_<std::allocator<void> > >[m[K’ is not derived from ‘[01m[Kboost::movelib::unique_ptr<Y, D>[m[K’
+         cv_bridge::CvImage(std_msgs::Header(), "bgr8", frame3).toImageMsg([01;36m[K)[m[K;
+                                                                           [01;36m[K^[m[K
+In file included from [01m[K/usr/include/boost/shared_ptr.hpp:17:0[m[K,
+                 from [01m[K/opt/ros/melodic/include/ros/forwards.h:37[m[K,
+                 from [01m[K/opt/ros/melodic/include/ros/common.h:37[m[K,
+                 from [01m[K/opt/ros/melodic/include/ros/ros.h:43[m[K,
+                 from [01m[K/opt/ros/melodic/include/image_transport/publisher.h:38[m[K,
+                 from [01m[K/opt/ros/melodic/include/image_transport/image_transport.h:38[m[K,
+                 from [01m[K/home/fri/Documents/julia/catkin_ws/src/opencv_hw/src/opencv_hw.cpp:1[m[K:
+[01m[K/usr/include/boost/smart_ptr/shared_ptr.hpp:658:18:[m[K [01;36m[Knote: [m[Kcandidate: boost::shared_ptr<T>& boost::shared_ptr<T>::operator=(boost::shared_ptr<T>&&) [with T = const sensor_msgs::Image_<std::allocator<void> >] <near match>
+     shared_ptr & [01;36m[Koperator[m[K=( shared_ptr && r ) BOOST_SP_NOEXCEPT
+                  [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/boost/smart_ptr/shared_ptr.hpp:658:18:[m[K [01;36m[Knote: [m[K  passing ‘[01m[Kconst ImageConstPtr* {aka const boost::shared_ptr<const sensor_msgs::Image_<std::allocator<void> > >*}[m[K’ as ‘[01m[Kthis[m[K’ argument discards qualifiers
+[01m[K/usr/include/boost/smart_ptr/shared_ptr.hpp:665:18:[m[K [01;36m[Knote: [m[Kcandidate: boost::shared_ptr<T>& boost::shared_ptr<T>::operator=(boost::shared_ptr<Y>&&) [with Y = sensor_msgs::Image_<std::allocator<void> >; T = const sensor_msgs::Image_<std::allocator<void> >] <near match>
+     shared_ptr & [01;36m[Koperator[m[K=( shared_ptr<Y> && r ) BOOST_SP_NOEXCEPT
+                  [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/boost/smart_ptr/shared_ptr.hpp:665:18:[m[K [01;36m[Knote: [m[K  passing ‘[01m[Kconst ImageConstPtr* {aka const boost::shared_ptr<const sensor_msgs::Image_<std::allocator<void> > >*}[m[K’ as ‘[01m[Kthis[m[K’ argument discards qualifiers
+[01m[K/usr/include/boost/smart_ptr/shared_ptr.hpp:683:18:[m[K [01;36m[Knote: [m[Kcandidate: boost::shared_ptr<T>& boost::shared_ptr<T>::operator=(boost::detail::sp_nullptr_t) [with T = const sensor_msgs::Image_<std::allocator<void> >; boost::detail::sp_nullptr_t = std::nullptr_t]
+     shared_ptr & [01;36m[Koperator[m[K=( boost::detail::sp_nullptr_t ) BOOST_SP_NOEXCEPT
+                  [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/boost/smart_ptr/shared_ptr.hpp:683:18:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Ksensor_msgs::ImagePtr {aka boost::shared_ptr<sensor_msgs::Image_<std::allocator<void> > >}[m[K’ to ‘[01m[Kboost::detail::sp_nullptr_t {aka std::nullptr_t}[m[K’
+In file included from [01m[K/home/fri/Documents/julia/catkin_ws/src/opencv_hw/src/opencv_hw.cpp:3:0[m[K:
+[01m[K/home/fri/Documents/julia/catkin_ws/src/opencv_hw/src/ROSInterface.cpp:107:75:[m[K [01;31m[Kerror: [m[Kno match for ‘[01m[Koperator=[m[K’ (operand types are ‘[01m[Kconst ImageConstPtr {aka const boost::shared_ptr<const sensor_msgs::Image_<std::allocator<void> > >}[m[K’ and ‘[01m[Ksensor_msgs::ImagePtr {aka boost::shared_ptr<sensor_msgs::Image_<std::allocator<void> > >}[m[K’)
+         cv_bridge::CvImage(std_msgs::Header(), "bgr8", frame4).toImageMsg([01;31m[K)[m[K;
+                                                                           [01;31m[K^[m[K
+In file included from [01m[K/usr/include/boost/shared_ptr.hpp:17:0[m[K,
+                 from [01m[K/opt/ros/melodic/include/ros/forwards.h:37[m[K,
+                 from [01m[K/opt/ros/melodic/include/ros/common.h:37[m[K,
+                 from [01m[K/opt/ros/melodic/include/ros/ros.h:43[m[K,
+                 from [01m[K/opt/ros/melodic/include/image_transport/publisher.h:38[m[K,
+                 from [01m[K/opt/ros/melodic/include/image_transport/image_transport.h:38[m[K,
+                 from [01m[K/home/fri/Documents/julia/catkin_ws/src/opencv_hw/src/opencv_hw.cpp:1[m[K:
+[01m[K/usr/include/boost/smart_ptr/shared_ptr.hpp:547:18:[m[K [01;36m[Knote: [m[Kcandidate: boost::shared_ptr<T>& boost::shared_ptr<T>::operator=(const boost::shared_ptr<T>&) [with T = const sensor_msgs::Image_<std::allocator<void> >] <near match>
+     shared_ptr & [01;36m[Koperator[m[K=( shared_ptr const & r ) BOOST_SP_NOEXCEPT
+                  [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/boost/smart_ptr/shared_ptr.hpp:547:18:[m[K [01;36m[Knote: [m[K  passing ‘[01m[Kconst ImageConstPtr* {aka const boost::shared_ptr<const sensor_msgs::Image_<std::allocator<void> > >*}[m[K’ as ‘[01m[Kthis[m[K’ argument discards qualifiers
+[01m[K/usr/include/boost/smart_ptr/shared_ptr.hpp:556:18:[m[K [01;36m[Knote: [m[Kcandidate: boost::shared_ptr<T>& boost::shared_ptr<T>::operator=(const boost::shared_ptr<Y>&) [with Y = sensor_msgs::Image_<std::allocator<void> >; T = const sensor_msgs::Image_<std::allocator<void> >] <near match>
+     shared_ptr & [01;36m[Koperator[m[K=(shared_ptr<Y> const & r) BOOST_SP_NOEXCEPT
+                  [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/boost/smart_ptr/shared_ptr.hpp:556:18:[m[K [01;36m[Knote: [m[K  passing ‘[01m[Kconst ImageConstPtr* {aka const boost::shared_ptr<const sensor_msgs::Image_<std::allocator<void> > >*}[m[K’ as ‘[01m[Kthis[m[K’ argument discards qualifiers
+[01m[K/usr/include/boost/smart_ptr/shared_ptr.hpp:567:18:[m[K [01;36m[Knote: [m[Kcandidate: template<class Y> boost::shared_ptr<T>& boost::shared_ptr<T>::operator=(std::auto_ptr<_Up>&) [with Y = Y; T = const sensor_msgs::Image_<std::allocator<void> >]
+     shared_ptr & [01;36m[Koperator[m[K=( std::auto_ptr<Y> & r )
+                  [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/boost/smart_ptr/shared_ptr.hpp:567:18:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/home/fri/Documents/julia/catkin_ws/src/opencv_hw/src/opencv_hw.cpp:3:0[m[K:
+[01m[K/home/fri/Documents/julia/catkin_ws/src/opencv_hw/src/ROSInterface.cpp:107:75:[m[K [01;36m[Knote: [m[K  ‘[01m[Ksensor_msgs::ImagePtr {aka boost::shared_ptr<sensor_msgs::Image_<std::allocator<void> > >}[m[K’ is not derived from ‘[01m[Kstd::auto_ptr<Y>[m[K’
+         cv_bridge::CvImage(std_msgs::Header(), "bgr8", frame4).toImageMsg([01;36m[K)[m[K;
+                                                                           [01;36m[K^[m[K
+In file included from [01m[K/usr/include/boost/shared_ptr.hpp:17:0[m[K,
+                 from [01m[K/opt/ros/melodic/include/ros/forwards.h:37[m[K,
+                 from [01m[K/opt/ros/melodic/include/ros/common.h:37[m[K,
+                 from [01m[K/opt/ros/melodic/include/ros/ros.h:43[m[K,
+                 from [01m[K/opt/ros/melodic/include/image_transport/publisher.h:38[m[K,
+                 from [01m[K/opt/ros/melodic/include/image_transport/image_transport.h:38[m[K,
+                 from [01m[K/home/fri/Documents/julia/catkin_ws/src/opencv_hw/src/opencv_hw.cpp:1[m[K:
+[01m[K/usr/include/boost/smart_ptr/shared_ptr.hpp:576:18:[m[K [01;36m[Knote: [m[Kcandidate: template<class Y> boost::shared_ptr<T>& boost::shared_ptr<T>::operator=(std::auto_ptr<_Up>&&) [with Y = Y; T = const sensor_msgs::Image_<std::allocator<void> >]
+     shared_ptr & [01;36m[Koperator[m[K=( std::auto_ptr<Y> && r )
+                  [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/boost/smart_ptr/shared_ptr.hpp:576:18:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/home/fri/Documents/julia/catkin_ws/src/opencv_hw/src/opencv_hw.cpp:3:0[m[K:
+[01m[K/home/fri/Documents/julia/catkin_ws/src/opencv_hw/src/ROSInterface.cpp:107:75:[m[K [01;36m[Knote: [m[K  ‘[01m[Ksensor_msgs::ImagePtr {aka boost::shared_ptr<sensor_msgs::Image_<std::allocator<void> > >}[m[K’ is not derived from ‘[01m[Kstd::auto_ptr<Y>[m[K’
+         cv_bridge::CvImage(std_msgs::Header(), "bgr8", frame4).toImageMsg([01;36m[K)[m[K;
+                                                                           [01;36m[K^[m[K
+In file included from [01m[K/usr/include/boost/shared_ptr.hpp:17:0[m[K,
+                 from [01m[K/opt/ros/melodic/include/ros/forwards.h:37[m[K,
+                 from [01m[K/opt/ros/melodic/include/ros/common.h:37[m[K,
+                 from [01m[K/opt/ros/melodic/include/ros/ros.h:43[m[K,
+                 from [01m[K/opt/ros/melodic/include/image_transport/publisher.h:38[m[K,
+                 from [01m[K/opt/ros/melodic/include/image_transport/image_transport.h:38[m[K,
+                 from [01m[K/home/fri/Documents/julia/catkin_ws/src/opencv_hw/src/opencv_hw.cpp:1[m[K:
+[01m[K/usr/include/boost/smart_ptr/shared_ptr.hpp:598:18:[m[K [01;36m[Knote: [m[Kcandidate: template<class Y, class D> boost::shared_ptr<T>& boost::shared_ptr<T>::operator=(std::unique_ptr<_Up, _Ep>&&) [with Y = Y; D = D; T = const sensor_msgs::Image_<std::allocator<void> >]
+     shared_ptr & [01;36m[Koperator[m[K=( std::unique_ptr<Y, D> && r )
+                  [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/boost/smart_ptr/shared_ptr.hpp:598:18:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/home/fri/Documents/julia/catkin_ws/src/opencv_hw/src/opencv_hw.cpp:3:0[m[K:
+[01m[K/home/fri/Documents/julia/catkin_ws/src/opencv_hw/src/ROSInterface.cpp:107:75:[m[K [01;36m[Knote: [m[K  ‘[01m[Ksensor_msgs::ImagePtr {aka boost::shared_ptr<sensor_msgs::Image_<std::allocator<void> > >}[m[K’ is not derived from ‘[01m[Kstd::unique_ptr<_Tp, _Dp>[m[K’
+         cv_bridge::CvImage(std_msgs::Header(), "bgr8", frame4).toImageMsg([01;36m[K)[m[K;
+                                                                           [01;36m[K^[m[K
+In file included from [01m[K/usr/include/boost/shared_ptr.hpp:17:0[m[K,
+                 from [01m[K/opt/ros/melodic/include/ros/forwards.h:37[m[K,
+                 from [01m[K/opt/ros/melodic/include/ros/common.h:37[m[K,
+                 from [01m[K/opt/ros/melodic/include/ros/ros.h:43[m[K,
+                 from [01m[K/opt/ros/melodic/include/image_transport/publisher.h:38[m[K,
+                 from [01m[K/opt/ros/melodic/include/image_transport/image_transport.h:38[m[K,
+                 from [01m[K/home/fri/Documents/julia/catkin_ws/src/opencv_hw/src/opencv_hw.cpp:1[m[K:
+[01m[K/usr/include/boost/smart_ptr/shared_ptr.hpp:607:18:[m[K [01;36m[Knote: [m[Kcandidate: template<class Y, class D> boost::shared_ptr<T>& boost::shared_ptr<T>::operator=(boost::movelib::unique_ptr<Y, D>) [with Y = Y; D = D; T = const sensor_msgs::Image_<std::allocator<void> >]
+     shared_ptr & [01;36m[Koperator[m[K=( boost::movelib::unique_ptr<Y, D> r )
+                  [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/boost/smart_ptr/shared_ptr.hpp:607:18:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/home/fri/Documents/julia/catkin_ws/src/opencv_hw/src/opencv_hw.cpp:3:0[m[K:
+[01m[K/home/fri/Documents/julia/catkin_ws/src/opencv_hw/src/ROSInterface.cpp:107:75:[m[K [01;36m[Knote: [m[K  ‘[01m[Kboost::shared_ptr<sensor_msgs::Image_<std::allocator<void> > >[m[K’ is not derived from ‘[01m[Kboost::movelib::unique_ptr<Y, D>[m[K’
+         cv_bridge::CvImage(std_msgs::Header(), "bgr8", frame4).toImageMsg([01;36m[K)[m[K;
+                                                                           [01;36m[K^[m[K
+In file included from [01m[K/usr/include/boost/shared_ptr.hpp:17:0[m[K,
+                 from [01m[K/opt/ros/melodic/include/ros/forwards.h:37[m[K,
+                 from [01m[K/opt/ros/melodic/include/ros/common.h:37[m[K,
+                 from [01m[K/opt/ros/melodic/include/ros/ros.h:43[m[K,
+                 from [01m[K/opt/ros/melodic/include/image_transport/publisher.h:38[m[K,
+                 from [01m[K/opt/ros/melodic/include/image_transport/image_transport.h:38[m[K,
+                 from [01m[K/home/fri/Documents/julia/catkin_ws/src/opencv_hw/src/opencv_hw.cpp:1[m[K:
+[01m[K/usr/include/boost/smart_ptr/shared_ptr.hpp:658:18:[m[K [01;36m[Knote: [m[Kcandidate: boost::shared_ptr<T>& boost::shared_ptr<T>::operator=(boost::shared_ptr<T>&&) [with T = const sensor_msgs::Image_<std::allocator<void> >] <near match>
+     shared_ptr & [01;36m[Koperator[m[K=( shared_ptr && r ) BOOST_SP_NOEXCEPT
+                  [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/boost/smart_ptr/shared_ptr.hpp:658:18:[m[K [01;36m[Knote: [m[K  passing ‘[01m[Kconst ImageConstPtr* {aka const boost::shared_ptr<const sensor_msgs::Image_<std::allocator<void> > >*}[m[K’ as ‘[01m[Kthis[m[K’ argument discards qualifiers
+[01m[K/usr/include/boost/smart_ptr/shared_ptr.hpp:665:18:[m[K [01;36m[Knote: [m[Kcandidate: boost::shared_ptr<T>& boost::shared_ptr<T>::operator=(boost::shared_ptr<Y>&&) [with Y = sensor_msgs::Image_<std::allocator<void> >; T = const sensor_msgs::Image_<std::allocator<void> >] <near match>
+     shared_ptr & [01;36m[Koperator[m[K=( shared_ptr<Y> && r ) BOOST_SP_NOEXCEPT
+                  [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/boost/smart_ptr/shared_ptr.hpp:665:18:[m[K [01;36m[Knote: [m[K  passing ‘[01m[Kconst ImageConstPtr* {aka const boost::shared_ptr<const sensor_msgs::Image_<std::allocator<void> > >*}[m[K’ as ‘[01m[Kthis[m[K’ argument discards qualifiers
+[01m[K/usr/include/boost/smart_ptr/shared_ptr.hpp:683:18:[m[K [01;36m[Knote: [m[Kcandidate: boost::shared_ptr<T>& boost::shared_ptr<T>::operator=(boost::detail::sp_nullptr_t) [with T = const sensor_msgs::Image_<std::allocator<void> >; boost::detail::sp_nullptr_t = std::nullptr_t]
+     shared_ptr & [01;36m[Koperator[m[K=( boost::detail::sp_nullptr_t ) BOOST_SP_NOEXCEPT
+                  [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/boost/smart_ptr/shared_ptr.hpp:683:18:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Ksensor_msgs::ImagePtr {aka boost::shared_ptr<sensor_msgs::Image_<std::allocator<void> > >}[m[K’ to ‘[01m[Kboost::detail::sp_nullptr_t {aka std::nullptr_t}[m[K’
+[01m[K/home/fri/Documents/julia/catkin_ws/src/opencv_hw/src/ROSInterface.cpp:[m[K In constructor ‘[01m[KROSInterface::ROSInterface(ColorFilter)[m[K’:
+[01m[K/home/fri/Documents/julia/catkin_ws/src/opencv_hw/src/ROSInterface.cpp:26:57:[m[K [01;31m[Kerror: [m[K‘[01m[KImageConverter[m[K’ has not been declared
+     _sub = _it.subscribe("/kinect2/hd/image_color", 1, &[01;31m[KImageConverter[m[K::imageCb, this);
+                                                         [01;31m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/fri/Documents/julia/catkin_ws/src/opencv_hw/src/ROSInterface.cpp:[m[K In member function ‘[01m[Kvoid ROSInterface::imageCb(const ImageConstPtr&)[m[K’:
+[01m[K/home/fri/Documents/julia/catkin_ws/src/opencv_hw/src/ROSInterface.cpp:67:74:[m[K [01;31m[Kerror: [m[Kno match for ‘[01m[Koperator=[m[K’ (operand types are ‘[01m[Kconst ImageConstPtr {aka const boost::shared_ptr<const sensor_msgs::Image_<std::allocator<void> > >}[m[K’ and ‘[01m[Ksensor_msgs::ImagePtr {aka boost::shared_ptr<sensor_msgs::Image_<std::allocator<void> > >}[m[K’)
+         cv_bridge::CvImage(std_msgs::Header(), "bgr8", frame).toImageMsg([01;31m[K)[m[K;
+                                                                          [01;31m[K^[m[K
+In file included from [01m[K/usr/include/boost/shared_ptr.hpp:17:0[m[K,
+                 from [01m[K/opt/ros/melodic/include/ros/forwards.h:37[m[K,
+                 from [01m[K/opt/ros/melodic/include/ros/common.h:37[m[K,
+                 from [01m[K/opt/ros/melodic/include/ros/ros.h:43[m[K,
+                 from [01m[K/home/fri/Documents/julia/catkin_ws/src/opencv_hw/src/ROSInterface.cpp:1[m[K:
+[01m[K/usr/include/boost/smart_ptr/shared_ptr.hpp:547:18:[m[K [01;36m[Knote: [m[Kcandidate: boost::shared_ptr<T>& boost::shared_ptr<T>::operator=(const boost::shared_ptr<T>&) [with T = const sensor_msgs::Image_<std::allocator<void> >] <near match>
+     shared_ptr & [01;36m[Koperator[m[K=( shared_ptr const & r ) BOOST_SP_NOEXCEPT
+                  [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/boost/smart_ptr/shared_ptr.hpp:547:18:[m[K [01;36m[Knote: [m[K  passing ‘[01m[Kconst ImageConstPtr* {aka const boost::shared_ptr<const sensor_msgs::Image_<std::allocator<void> > >*}[m[K’ as ‘[01m[Kthis[m[K’ argument discards qualifiers
+[01m[K/usr/include/boost/smart_ptr/shared_ptr.hpp:556:18:[m[K [01;36m[Knote: [m[Kcandidate: boost::shared_ptr<T>& boost::shared_ptr<T>::operator=(const boost::shared_ptr<Y>&) [with Y = sensor_msgs::Image_<std::allocator<void> >; T = const sensor_msgs::Image_<std::allocator<void> >] <near match>
+     shared_ptr & [01;36m[Koperator[m[K=(shared_ptr<Y> const & r) BOOST_SP_NOEXCEPT
+                  [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/boost/smart_ptr/shared_ptr.hpp:556:18:[m[K [01;36m[Knote: [m[K  passing ‘[01m[Kconst ImageConstPtr* {aka const boost::shared_ptr<const sensor_msgs::Image_<std::allocator<void> > >*}[m[K’ as ‘[01m[Kthis[m[K’ argument discards qualifiers
+[01m[K/usr/include/boost/smart_ptr/shared_ptr.hpp:567:18:[m[K [01;36m[Knote: [m[Kcandidate: template<class Y> boost::shared_ptr<T>& boost::shared_ptr<T>::operator=(std::auto_ptr<_Up>&) [with Y = Y; T = const sensor_msgs::Image_<std::allocator<void> >]
+     shared_ptr & [01;36m[Koperator[m[K=( std::auto_ptr<Y> & r )
+                  [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/boost/smart_ptr/shared_ptr.hpp:567:18:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/fri/Documents/julia/catkin_ws/src/opencv_hw/src/ROSInterface.cpp:67:74:[m[K [01;36m[Knote: [m[K  ‘[01m[Ksensor_msgs::ImagePtr {aka boost::shared_ptr<sensor_msgs::Image_<std::allocator<void> > >}[m[K’ is not derived from ‘[01m[Kstd::auto_ptr<Y>[m[K’
+         cv_bridge::CvImage(std_msgs::Header(), "bgr8", frame).toImageMsg([01;36m[K)[m[K;
+                                                                          [01;36m[K^[m[K
+In file included from [01m[K/usr/include/boost/shared_ptr.hpp:17:0[m[K,
+                 from [01m[K/opt/ros/melodic/include/ros/forwards.h:37[m[K,
+                 from [01m[K/opt/ros/melodic/include/ros/common.h:37[m[K,
+                 from [01m[K/opt/ros/melodic/include/ros/ros.h:43[m[K,
+                 from [01m[K/home/fri/Documents/julia/catkin_ws/src/opencv_hw/src/ROSInterface.cpp:1[m[K:
+[01m[K/usr/include/boost/smart_ptr/shared_ptr.hpp:576:18:[m[K [01;36m[Knote: [m[Kcandidate: template<class Y> boost::shared_ptr<T>& boost::shared_ptr<T>::operator=(std::auto_ptr<_Up>&&) [with Y = Y; T = const sensor_msgs::Image_<std::allocator<void> >]
+     shared_ptr & [01;36m[Koperator[m[K=( std::auto_ptr<Y> && r )
+                  [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/boost/smart_ptr/shared_ptr.hpp:576:18:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/fri/Documents/julia/catkin_ws/src/opencv_hw/src/ROSInterface.cpp:67:74:[m[K [01;36m[Knote: [m[K  ‘[01m[Ksensor_msgs::ImagePtr {aka boost::shared_ptr<sensor_msgs::Image_<std::allocator<void> > >}[m[K’ is not derived from ‘[01m[Kstd::auto_ptr<Y>[m[K’
+         cv_bridge::CvImage(std_msgs::Header(), "bgr8", frame).toImageMsg([01;36m[K)[m[K;
+                                                                          [01;36m[K^[m[K
+In file included from [01m[K/usr/include/boost/shared_ptr.hpp:17:0[m[K,
+                 from [01m[K/opt/ros/melodic/include/ros/forwards.h:37[m[K,
+                 from [01m[K/opt/ros/melodic/include/ros/common.h:37[m[K,
+                 from [01m[K/opt/ros/melodic/include/ros/ros.h:43[m[K,
+                 from [01m[K/home/fri/Documents/julia/catkin_ws/src/opencv_hw/src/ROSInterface.cpp:1[m[K:
+[01m[K/usr/include/boost/smart_ptr/shared_ptr.hpp:598:18:[m[K [01;36m[Knote: [m[Kcandidate: template<class Y, class D> boost::shared_ptr<T>& boost::shared_ptr<T>::operator=(std::unique_ptr<_Up, _Ep>&&) [with Y = Y; D = D; T = const sensor_msgs::Image_<std::allocator<void> >]
+     shared_ptr & [01;36m[Koperator[m[K=( std::unique_ptr<Y, D> && r )
+                  [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/boost/smart_ptr/shared_ptr.hpp:598:18:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/fri/Documents/julia/catkin_ws/src/opencv_hw/src/ROSInterface.cpp:67:74:[m[K [01;36m[Knote: [m[K  ‘[01m[Ksensor_msgs::ImagePtr {aka boost::shared_ptr<sensor_msgs::Image_<std::allocator<void> > >}[m[K’ is not derived from ‘[01m[Kstd::unique_ptr<_Tp, _Dp>[m[K’
+         cv_bridge::CvImage(std_msgs::Header(), "bgr8", frame).toImageMsg([01;36m[K)[m[K;
+                                                                          [01;36m[K^[m[K
+In file included from [01m[K/usr/include/boost/shared_ptr.hpp:17:0[m[K,
+                 from [01m[K/opt/ros/melodic/include/ros/forwards.h:37[m[K,
+                 from [01m[K/opt/ros/melodic/include/ros/common.h:37[m[K,
+                 from [01m[K/opt/ros/melodic/include/ros/ros.h:43[m[K,
+                 from [01m[K/home/fri/Documents/julia/catkin_ws/src/opencv_hw/src/ROSInterface.cpp:1[m[K:
+[01m[K/usr/include/boost/smart_ptr/shared_ptr.hpp:607:18:[m[K [01;36m[Knote: [m[Kcandidate: template<class Y, class D> boost::shared_ptr<T>& boost::shared_ptr<T>::operator=(boost::movelib::unique_ptr<Y, D>) [with Y = Y; D = D; T = const sensor_msgs::Image_<std::allocator<void> >]
+     shared_ptr & [01;36m[Koperator[m[K=( boost::movelib::unique_ptr<Y, D> r )
+                  [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/boost/smart_ptr/shared_ptr.hpp:607:18:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/fri/Documents/julia/catkin_ws/src/opencv_hw/src/ROSInterface.cpp:67:74:[m[K [01;36m[Knote: [m[K  ‘[01m[Kboost::shared_ptr<sensor_msgs::Image_<std::allocator<void> > >[m[K’ is not derived from ‘[01m[Kboost::movelib::unique_ptr<Y, D>[m[K’
+         cv_bridge::CvImage(std_msgs::Header(), "bgr8", frame).toImageMsg([01;36m[K)[m[K;
+                                                                          [01;36m[K^[m[K
+In file included from [01m[K/usr/include/boost/shared_ptr.hpp:17:0[m[K,
+                 from [01m[K/opt/ros/melodic/include/ros/forwards.h:37[m[K,
+                 from [01m[K/opt/ros/melodic/include/ros/common.h:37[m[K,
+                 from [01m[K/opt/ros/melodic/include/ros/ros.h:43[m[K,
+                 from [01m[K/home/fri/Documents/julia/catkin_ws/src/opencv_hw/src/ROSInterface.cpp:1[m[K:
+[01m[K/usr/include/boost/smart_ptr/shared_ptr.hpp:658:18:[m[K [01;36m[Knote: [m[Kcandidate: boost::shared_ptr<T>& boost::shared_ptr<T>::operator=(boost::shared_ptr<T>&&) [with T = const sensor_msgs::Image_<std::allocator<void> >] <near match>
+     shared_ptr & [01;36m[Koperator[m[K=( shared_ptr && r ) BOOST_SP_NOEXCEPT
+                  [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/boost/smart_ptr/shared_ptr.hpp:658:18:[m[K [01;36m[Knote: [m[K  passing ‘[01m[Kconst ImageConstPtr* {aka const boost::shared_ptr<const sensor_msgs::Image_<std::allocator<void> > >*}[m[K’ as ‘[01m[Kthis[m[K’ argument discards qualifiers
+[01m[K/usr/include/boost/smart_ptr/shared_ptr.hpp:665:18:[m[K [01;36m[Knote: [m[Kcandidate: boost::shared_ptr<T>& boost::shared_ptr<T>::operator=(boost::shared_ptr<Y>&&) [with Y = sensor_msgs::Image_<std::allocator<void> >; T = const sensor_msgs::Image_<std::allocator<void> >] <near match>
+     shared_ptr & [01;36m[Koperator[m[K=( shared_ptr<Y> && r ) BOOST_SP_NOEXCEPT
+                  [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/boost/smart_ptr/shared_ptr.hpp:665:18:[m[K [01;36m[Knote: [m[K  passing ‘[01m[Kconst ImageConstPtr* {aka const boost::shared_ptr<const sensor_msgs::Image_<std::allocator<void> > >*}[m[K’ as ‘[01m[Kthis[m[K’ argument discards qualifiers
+[01m[K/usr/include/boost/smart_ptr/shared_ptr.hpp:683:18:[m[K [01;36m[Knote: [m[Kcandidate: boost::shared_ptr<T>& boost::shared_ptr<T>::operator=(boost::detail::sp_nullptr_t) [with T = const sensor_msgs::Image_<std::allocator<void> >; boost::detail::sp_nullptr_t = std::nullptr_t]
+     shared_ptr & [01;36m[Koperator[m[K=( boost::detail::sp_nullptr_t ) BOOST_SP_NOEXCEPT
+                  [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/boost/smart_ptr/shared_ptr.hpp:683:18:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Ksensor_msgs::ImagePtr {aka boost::shared_ptr<sensor_msgs::Image_<std::allocator<void> > >}[m[K’ to ‘[01m[Kboost::detail::sp_nullptr_t {aka std::nullptr_t}[m[K’
+[01m[K/home/fri/Documents/julia/catkin_ws/src/opencv_hw/src/ROSInterface.cpp:80:75:[m[K [01;31m[Kerror: [m[Kno match for ‘[01m[Koperator=[m[K’ (operand types are ‘[01m[Kconst ImageConstPtr {aka const boost::shared_ptr<const sensor_msgs::Image_<std::allocator<void> > >}[m[K’ and ‘[01m[Ksensor_msgs::ImagePtr {aka boost::shared_ptr<sensor_msgs::Image_<std::allocator<void> > >}[m[K’)
+         cv_bridge::CvImage(std_msgs::Header(), "bgr8", frame2).toImageMsg([01;31m[K)[m[K;
+                                                                           [01;31m[K^[m[K
+In file included from [01m[K/usr/include/boost/shared_ptr.hpp:17:0[m[K,
+                 from [01m[K/opt/ros/melodic/include/ros/forwards.h:37[m[K,
+                 from [01m[K/opt/ros/melodic/include/ros/common.h:37[m[K,
+                 from [01m[K/opt/ros/melodic/include/ros/ros.h:43[m[K,
+                 from [01m[K/home/fri/Documents/julia/catkin_ws/src/opencv_hw/src/ROSInterface.cpp:1[m[K:
+[01m[K/usr/include/boost/smart_ptr/shared_ptr.hpp:547:18:[m[K [01;36m[Knote: [m[Kcandidate: boost::shared_ptr<T>& boost::shared_ptr<T>::operator=(const boost::shared_ptr<T>&) [with T = const sensor_msgs::Image_<std::allocator<void> >] <near match>
+     shared_ptr & [01;36m[Koperator[m[K=( shared_ptr const & r ) BOOST_SP_NOEXCEPT
+                  [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/boost/smart_ptr/shared_ptr.hpp:547:18:[m[K [01;36m[Knote: [m[K  passing ‘[01m[Kconst ImageConstPtr* {aka const boost::shared_ptr<const sensor_msgs::Image_<std::allocator<void> > >*}[m[K’ as ‘[01m[Kthis[m[K’ argument discards qualifiers
+[01m[K/usr/include/boost/smart_ptr/shared_ptr.hpp:556:18:[m[K [01;36m[Knote: [m[Kcandidate: boost::shared_ptr<T>& boost::shared_ptr<T>::operator=(const boost::shared_ptr<Y>&) [with Y = sensor_msgs::Image_<std::allocator<void> >; T = const sensor_msgs::Image_<std::allocator<void> >] <near match>
+     shared_ptr & [01;36m[Koperator[m[K=(shared_ptr<Y> const & r) BOOST_SP_NOEXCEPT
+                  [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/boost/smart_ptr/shared_ptr.hpp:556:18:[m[K [01;36m[Knote: [m[K  passing ‘[01m[Kconst ImageConstPtr* {aka const boost::shared_ptr<const sensor_msgs::Image_<std::allocator<void> > >*}[m[K’ as ‘[01m[Kthis[m[K’ argument discards qualifiers
+[01m[K/usr/include/boost/smart_ptr/shared_ptr.hpp:567:18:[m[K [01;36m[Knote: [m[Kcandidate: template<class Y> boost::shared_ptr<T>& boost::shared_ptr<T>::operator=(std::auto_ptr<_Up>&) [with Y = Y; T = const sensor_msgs::Image_<std::allocator<void> >]
+     shared_ptr & [01;36m[Koperator[m[K=( std::auto_ptr<Y> & r )
+                  [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/boost/smart_ptr/shared_ptr.hpp:567:18:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/fri/Documents/julia/catkin_ws/src/opencv_hw/src/ROSInterface.cpp:80:75:[m[K [01;36m[Knote: [m[K  ‘[01m[Ksensor_msgs::ImagePtr {aka boost::shared_ptr<sensor_msgs::Image_<std::allocator<void> > >}[m[K’ is not derived from ‘[01m[Kstd::auto_ptr<Y>[m[K’
+         cv_bridge::CvImage(std_msgs::Header(), "bgr8", frame2).toImageMsg([01;36m[K)[m[K;
+                                                                           [01;36m[K^[m[K
+In file included from [01m[K/usr/include/boost/shared_ptr.hpp:17:0[m[K,
+                 from [01m[K/opt/ros/melodic/include/ros/forwards.h:37[m[K,
+                 from [01m[K/opt/ros/melodic/include/ros/common.h:37[m[K,
+                 from [01m[K/opt/ros/melodic/include/ros/ros.h:43[m[K,
+                 from [01m[K/home/fri/Documents/julia/catkin_ws/src/opencv_hw/src/ROSInterface.cpp:1[m[K:
+[01m[K/usr/include/boost/smart_ptr/shared_ptr.hpp:576:18:[m[K [01;36m[Knote: [m[Kcandidate: template<class Y> boost::shared_ptr<T>& boost::shared_ptr<T>::operator=(std::auto_ptr<_Up>&&) [with Y = Y; T = const sensor_msgs::Image_<std::allocator<void> >]
+     shared_ptr & [01;36m[Koperator[m[K=( std::auto_ptr<Y> && r )
+                  [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/boost/smart_ptr/shared_ptr.hpp:576:18:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/fri/Documents/julia/catkin_ws/src/opencv_hw/src/ROSInterface.cpp:80:75:[m[K [01;36m[Knote: [m[K  ‘[01m[Ksensor_msgs::ImagePtr {aka boost::shared_ptr<sensor_msgs::Image_<std::allocator<void> > >}[m[K’ is not derived from ‘[01m[Kstd::auto_ptr<Y>[m[K’
+         cv_bridge::CvImage(std_msgs::Header(), "bgr8", frame2).toImageMsg([01;36m[K)[m[K;
+                                                                           [01;36m[K^[m[K
+In file included from [01m[K/usr/include/boost/shared_ptr.hpp:17:0[m[K,
+                 from [01m[K/opt/ros/melodic/include/ros/forwards.h:37[m[K,
+                 from [01m[K/opt/ros/melodic/include/ros/common.h:37[m[K,
+                 from [01m[K/opt/ros/melodic/include/ros/ros.h:43[m[K,
+                 from [01m[K/home/fri/Documents/julia/catkin_ws/src/opencv_hw/src/ROSInterface.cpp:1[m[K:
+[01m[K/usr/include/boost/smart_ptr/shared_ptr.hpp:598:18:[m[K [01;36m[Knote: [m[Kcandidate: template<class Y, class D> boost::shared_ptr<T>& boost::shared_ptr<T>::operator=(std::unique_ptr<_Up, _Ep>&&) [with Y = Y; D = D; T = const sensor_msgs::Image_<std::allocator<void> >]
+     shared_ptr & [01;36m[Koperator[m[K=( std::unique_ptr<Y, D> && r )
+                  [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/boost/smart_ptr/shared_ptr.hpp:598:18:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/fri/Documents/julia/catkin_ws/src/opencv_hw/src/ROSInterface.cpp:80:75:[m[K [01;36m[Knote: [m[K  ‘[01m[Ksensor_msgs::ImagePtr {aka boost::shared_ptr<sensor_msgs::Image_<std::allocator<void> > >}[m[K’ is not derived from ‘[01m[Kstd::unique_ptr<_Tp, _Dp>[m[K’
+         cv_bridge::CvImage(std_msgs::Header(), "bgr8", frame2).toImageMsg([01;36m[K)[m[K;
+                                                                           [01;36m[K^[m[K
+In file included from [01m[K/usr/include/boost/shared_ptr.hpp:17:0[m[K,
+                 from [01m[K/opt/ros/melodic/include/ros/forwards.h:37[m[K,
+                 from [01m[K/opt/ros/melodic/include/ros/common.h:37[m[K,
+                 from [01m[K/opt/ros/melodic/include/ros/ros.h:43[m[K,
+                 from [01m[K/home/fri/Documents/julia/catkin_ws/src/opencv_hw/src/ROSInterface.cpp:1[m[K:
+[01m[K/usr/include/boost/smart_ptr/shared_ptr.hpp:607:18:[m[K [01;36m[Knote: [m[Kcandidate: template<class Y, class D> boost::shared_ptr<T>& boost::shared_ptr<T>::operator=(boost::movelib::unique_ptr<Y, D>) [with Y = Y; D = D; T = const sensor_msgs::Image_<std::allocator<void> >]
+     shared_ptr & [01;36m[Koperator[m[K=( boost::movelib::unique_ptr<Y, D> r )
+                  [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/boost/smart_ptr/shared_ptr.hpp:607:18:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/fri/Documents/julia/catkin_ws/src/opencv_hw/src/ROSInterface.cpp:80:75:[m[K [01;36m[Knote: [m[K  ‘[01m[Kboost::shared_ptr<sensor_msgs::Image_<std::allocator<void> > >[m[K’ is not derived from ‘[01m[Kboost::movelib::unique_ptr<Y, D>[m[K’
+         cv_bridge::CvImage(std_msgs::Header(), "bgr8", frame2).toImageMsg([01;36m[K)[m[K;
+                                                                           [01;36m[K^[m[K
+In file included from [01m[K/usr/include/boost/shared_ptr.hpp:17:0[m[K,
+                 from [01m[K/opt/ros/melodic/include/ros/forwards.h:37[m[K,
+                 from [01m[K/opt/ros/melodic/include/ros/common.h:37[m[K,
+                 from [01m[K/opt/ros/melodic/include/ros/ros.h:43[m[K,
+                 from [01m[K/home/fri/Documents/julia/catkin_ws/src/opencv_hw/src/ROSInterface.cpp:1[m[K:
+[01m[K/usr/include/boost/smart_ptr/shared_ptr.hpp:658:18:[m[K [01;36m[Knote: [m[Kcandidate: boost::shared_ptr<T>& boost::shared_ptr<T>::operator=(boost::shared_ptr<T>&&) [with T = const sensor_msgs::Image_<std::allocator<void> >] <near match>
+     shared_ptr & [01;36m[Koperator[m[K=( shared_ptr && r ) BOOST_SP_NOEXCEPT
+                  [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/boost/smart_ptr/shared_ptr.hpp:658:18:[m[K [01;36m[Knote: [m[K  passing ‘[01m[Kconst ImageConstPtr* {aka const boost::shared_ptr<const sensor_msgs::Image_<std::allocator<void> > >*}[m[K’ as ‘[01m[Kthis[m[K’ argument discards qualifiers
+[01m[K/usr/include/boost/smart_ptr/shared_ptr.hpp:665:18:[m[K [01;36m[Knote: [m[Kcandidate: boost::shared_ptr<T>& boost::shared_ptr<T>::operator=(boost::shared_ptr<Y>&&) [with Y = sensor_msgs::Image_<std::allocator<void> >; T = const sensor_msgs::Image_<std::allocator<void> >] <near match>
+     shared_ptr & [01;36m[Koperator[m[K=( shared_ptr<Y> && r ) BOOST_SP_NOEXCEPT
+                  [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/boost/smart_ptr/shared_ptr.hpp:665:18:[m[K [01;36m[Knote: [m[K  passing ‘[01m[Kconst ImageConstPtr* {aka const boost::shared_ptr<const sensor_msgs::Image_<std::allocator<void> > >*}[m[K’ as ‘[01m[Kthis[m[K’ argument discards qualifiers
+[01m[K/usr/include/boost/smart_ptr/shared_ptr.hpp:683:18:[m[K [01;36m[Knote: [m[Kcandidate: boost::shared_ptr<T>& boost::shared_ptr<T>::operator=(boost::detail::sp_nullptr_t) [with T = const sensor_msgs::Image_<std::allocator<void> >; boost::detail::sp_nullptr_t = std::nullptr_t]
+     shared_ptr & [01;36m[Koperator[m[K=( boost::detail::sp_nullptr_t ) BOOST_SP_NOEXCEPT
+                  [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/boost/smart_ptr/shared_ptr.hpp:683:18:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Ksensor_msgs::ImagePtr {aka boost::shared_ptr<sensor_msgs::Image_<std::allocator<void> > >}[m[K’ to ‘[01m[Kboost::detail::sp_nullptr_t {aka std::nullptr_t}[m[K’
+[01m[K/home/fri/Documents/julia/catkin_ws/src/opencv_hw/src/ROSInterface.cpp:93:75:[m[K [01;31m[Kerror: [m[Kno match for ‘[01m[Koperator=[m[K’ (operand types are ‘[01m[Kconst ImageConstPtr {aka const boost::shared_ptr<const sensor_msgs::Image_<std::allocator<void> > >}[m[K’ and ‘[01m[Ksensor_msgs::ImagePtr {aka boost::shared_ptr<sensor_msgs::Image_<std::allocator<void> > >}[m[K’)
+         cv_bridge::CvImage(std_msgs::Header(), "bgr8", frame3).toImageMsg([01;31m[K)[m[K;
+                                                                           [01;31m[K^[m[K
+In file included from [01m[K/usr/include/boost/shared_ptr.hpp:17:0[m[K,
+                 from [01m[K/opt/ros/melodic/include/ros/forwards.h:37[m[K,
+                 from [01m[K/opt/ros/melodic/include/ros/common.h:37[m[K,
+                 from [01m[K/opt/ros/melodic/include/ros/ros.h:43[m[K,
+                 from [01m[K/home/fri/Documents/julia/catkin_ws/src/opencv_hw/src/ROSInterface.cpp:1[m[K:
+[01m[K/usr/include/boost/smart_ptr/shared_ptr.hpp:547:18:[m[K [01;36m[Knote: [m[Kcandidate: boost::shared_ptr<T>& boost::shared_ptr<T>::operator=(const boost::shared_ptr<T>&) [with T = const sensor_msgs::Image_<std::allocator<void> >] <near match>
+     shared_ptr & [01;36m[Koperator[m[K=( shared_ptr const & r ) BOOST_SP_NOEXCEPT
+                  [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/boost/smart_ptr/shared_ptr.hpp:547:18:[m[K [01;36m[Knote: [m[K  passing ‘[01m[Kconst ImageConstPtr* {aka const boost::shared_ptr<const sensor_msgs::Image_<std::allocator<void> > >*}[m[K’ as ‘[01m[Kthis[m[K’ argument discards qualifiers
+[01m[K/usr/include/boost/smart_ptr/shared_ptr.hpp:556:18:[m[K [01;36m[Knote: [m[Kcandidate: boost::shared_ptr<T>& boost::shared_ptr<T>::operator=(const boost::shared_ptr<Y>&) [with Y = sensor_msgs::Image_<std::allocator<void> >; T = const sensor_msgs::Image_<std::allocator<void> >] <near match>
+     shared_ptr & [01;36m[Koperator[m[K=(shared_ptr<Y> const & r) BOOST_SP_NOEXCEPT
+                  [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/boost/smart_ptr/shared_ptr.hpp:556:18:[m[K [01;36m[Knote: [m[K  passing ‘[01m[Kconst ImageConstPtr* {aka const boost::shared_ptr<const sensor_msgs::Image_<std::allocator<void> > >*}[m[K’ as ‘[01m[Kthis[m[K’ argument discards qualifiers
+[01m[K/usr/include/boost/smart_ptr/shared_ptr.hpp:567:18:[m[K [01;36m[Knote: [m[Kcandidate: template<class Y> boost::shared_ptr<T>& boost::shared_ptr<T>::operator=(std::auto_ptr<_Up>&) [with Y = Y; T = const sensor_msgs::Image_<std::allocator<void> >]
+     shared_ptr & [01;36m[Koperator[m[K=( std::auto_ptr<Y> & r )
+                  [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/boost/smart_ptr/shared_ptr.hpp:567:18:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/fri/Documents/julia/catkin_ws/src/opencv_hw/src/ROSInterface.cpp:93:75:[m[K [01;36m[Knote: [m[K  ‘[01m[Ksensor_msgs::ImagePtr {aka boost::shared_ptr<sensor_msgs::Image_<std::allocator<void> > >}[m[K’ is not derived from ‘[01m[Kstd::auto_ptr<Y>[m[K’
+         cv_bridge::CvImage(std_msgs::Header(), "bgr8", frame3).toImageMsg([01;36m[K)[m[K;
+                                                                           [01;36m[K^[m[K
+In file included from [01m[K/usr/include/boost/shared_ptr.hpp:17:0[m[K,
+                 from [01m[K/opt/ros/melodic/include/ros/forwards.h:37[m[K,
+                 from [01m[K/opt/ros/melodic/include/ros/common.h:37[m[K,
+                 from [01m[K/opt/ros/melodic/include/ros/ros.h:43[m[K,
+                 from [01m[K/home/fri/Documents/julia/catkin_ws/src/opencv_hw/src/ROSInterface.cpp:1[m[K:
+[01m[K/usr/include/boost/smart_ptr/shared_ptr.hpp:576:18:[m[K [01;36m[Knote: [m[Kcandidate: template<class Y> boost::shared_ptr<T>& boost::shared_ptr<T>::operator=(std::auto_ptr<_Up>&&) [with Y = Y; T = const sensor_msgs::Image_<std::allocator<void> >]
+     shared_ptr & [01;36m[Koperator[m[K=( std::auto_ptr<Y> && r )
+                  [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/boost/smart_ptr/shared_ptr.hpp:576:18:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/fri/Documents/julia/catkin_ws/src/opencv_hw/src/ROSInterface.cpp:93:75:[m[K [01;36m[Knote: [m[K  ‘[01m[Ksensor_msgs::ImagePtr {aka boost::shared_ptr<sensor_msgs::Image_<std::allocator<void> > >}[m[K’ is not derived from ‘[01m[Kstd::auto_ptr<Y>[m[K’
+         cv_bridge::CvImage(std_msgs::Header(), "bgr8", frame3).toImageMsg([01;36m[K)[m[K;
+                                                                           [01;36m[K^[m[K
+In file included from [01m[K/usr/include/boost/shared_ptr.hpp:17:0[m[K,
+                 from [01m[K/opt/ros/melodic/include/ros/forwards.h:37[m[K,
+                 from [01m[K/opt/ros/melodic/include/ros/common.h:37[m[K,
+                 from [01m[K/opt/ros/melodic/include/ros/ros.h:43[m[K,
+                 from [01m[K/home/fri/Documents/julia/catkin_ws/src/opencv_hw/src/ROSInterface.cpp:1[m[K:
+[01m[K/usr/include/boost/smart_ptr/shared_ptr.hpp:598:18:[m[K [01;36m[Knote: [m[Kcandidate: template<class Y, class D> boost::shared_ptr<T>& boost::shared_ptr<T>::operator=(std::unique_ptr<_Up, _Ep>&&) [with Y = Y; D = D; T = const sensor_msgs::Image_<std::allocator<void> >]
+     shared_ptr & [01;36m[Koperator[m[K=( std::unique_ptr<Y, D> && r )
+                  [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/boost/smart_ptr/shared_ptr.hpp:598:18:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/fri/Documents/julia/catkin_ws/src/opencv_hw/src/ROSInterface.cpp:93:75:[m[K [01;36m[Knote: [m[K  ‘[01m[Ksensor_msgs::ImagePtr {aka boost::shared_ptr<sensor_msgs::Image_<std::allocator<void> > >}[m[K’ is not derived from ‘[01m[Kstd::unique_ptr<_Tp, _Dp>[m[K’
+         cv_bridge::CvImage(std_msgs::Header(), "bgr8", frame3).toImageMsg([01;36m[K)[m[K;
+                                                                           [01;36m[K^[m[K
+In file included from [01m[K/usr/include/boost/shared_ptr.hpp:17:0[m[K,
+                 from [01m[K/opt/ros/melodic/include/ros/forwards.h:37[m[K,
+                 from [01m[K/opt/ros/melodic/include/ros/common.h:37[m[K,
+                 from [01m[K/opt/ros/melodic/include/ros/ros.h:43[m[K,
+                 from [01m[K/home/fri/Documents/julia/catkin_ws/src/opencv_hw/src/ROSInterface.cpp:1[m[K:
+[01m[K/usr/include/boost/smart_ptr/shared_ptr.hpp:607:18:[m[K [01;36m[Knote: [m[Kcandidate: template<class Y, class D> boost::shared_ptr<T>& boost::shared_ptr<T>::operator=(boost::movelib::unique_ptr<Y, D>) [with Y = Y; D = D; T = const sensor_msgs::Image_<std::allocator<void> >]
+     shared_ptr & [01;36m[Koperator[m[K=( boost::movelib::unique_ptr<Y, D> r )
+                  [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/boost/smart_ptr/shared_ptr.hpp:607:18:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/fri/Documents/julia/catkin_ws/src/opencv_hw/src/ROSInterface.cpp:93:75:[m[K [01;36m[Knote: [m[K  ‘[01m[Kboost::shared_ptr<sensor_msgs::Image_<std::allocator<void> > >[m[K’ is not derived from ‘[01m[Kboost::movelib::unique_ptr<Y, D>[m[K’
+         cv_bridge::CvImage(std_msgs::Header(), "bgr8", frame3).toImageMsg([01;36m[K)[m[K;
+                                                                           [01;36m[K^[m[K
+In file included from [01m[K/usr/include/boost/shared_ptr.hpp:17:0[m[K,
+                 from [01m[K/opt/ros/melodic/include/ros/forwards.h:37[m[K,
+                 from [01m[K/opt/ros/melodic/include/ros/common.h:37[m[K,
+                 from [01m[K/opt/ros/melodic/include/ros/ros.h:43[m[K,
+                 from [01m[K/home/fri/Documents/julia/catkin_ws/src/opencv_hw/src/ROSInterface.cpp:1[m[K:
+[01m[K/usr/include/boost/smart_ptr/shared_ptr.hpp:658:18:[m[K [01;36m[Knote: [m[Kcandidate: boost::shared_ptr<T>& boost::shared_ptr<T>::operator=(boost::shared_ptr<T>&&) [with T = const sensor_msgs::Image_<std::allocator<void> >] <near match>
+     shared_ptr & [01;36m[Koperator[m[K=( shared_ptr && r ) BOOST_SP_NOEXCEPT
+                  [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/boost/smart_ptr/shared_ptr.hpp:658:18:[m[K [01;36m[Knote: [m[K  passing ‘[01m[Kconst ImageConstPtr* {aka const boost::shared_ptr<const sensor_msgs::Image_<std::allocator<void> > >*}[m[K’ as ‘[01m[Kthis[m[K’ argument discards qualifiers
+[01m[K/usr/include/boost/smart_ptr/shared_ptr.hpp:665:18:[m[K [01;36m[Knote: [m[Kcandidate: boost::shared_ptr<T>& boost::shared_ptr<T>::operator=(boost::shared_ptr<Y>&&) [with Y = sensor_msgs::Image_<std::allocator<void> >; T = const sensor_msgs::Image_<std::allocator<void> >] <near match>
+     shared_ptr & [01;36m[Koperator[m[K=( shared_ptr<Y> && r ) BOOST_SP_NOEXCEPT
+                  [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/boost/smart_ptr/shared_ptr.hpp:665:18:[m[K [01;36m[Knote: [m[K  passing ‘[01m[Kconst ImageConstPtr* {aka const boost::shared_ptr<const sensor_msgs::Image_<std::allocator<void> > >*}[m[K’ as ‘[01m[Kthis[m[K’ argument discards qualifiers
+[01m[K/usr/include/boost/smart_ptr/shared_ptr.hpp:683:18:[m[K [01;36m[Knote: [m[Kcandidate: boost::shared_ptr<T>& boost::shared_ptr<T>::operator=(boost::detail::sp_nullptr_t) [with T = const sensor_msgs::Image_<std::allocator<void> >; boost::detail::sp_nullptr_t = std::nullptr_t]
+     shared_ptr & [01;36m[Koperator[m[K=( boost::detail::sp_nullptr_t ) BOOST_SP_NOEXCEPT
+                  [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/boost/smart_ptr/shared_ptr.hpp:683:18:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Ksensor_msgs::ImagePtr {aka boost::shared_ptr<sensor_msgs::Image_<std::allocator<void> > >}[m[K’ to ‘[01m[Kboost::detail::sp_nullptr_t {aka std::nullptr_t}[m[K’
+[01m[K/home/fri/Documents/julia/catkin_ws/src/opencv_hw/src/ROSInterface.cpp:107:75:[m[K [01;31m[Kerror: [m[Kno match for ‘[01m[Koperator=[m[K’ (operand types are ‘[01m[Kconst ImageConstPtr {aka const boost::shared_ptr<const sensor_msgs::Image_<std::allocator<void> > >}[m[K’ and ‘[01m[Ksensor_msgs::ImagePtr {aka boost::shared_ptr<sensor_msgs::Image_<std::allocator<void> > >}[m[K’)
+         cv_bridge::CvImage(std_msgs::Header(), "bgr8", frame4).toImageMsg([01;31m[K)[m[K;
+                                                                           [01;31m[K^[m[K
+In file included from [01m[K/usr/include/boost/shared_ptr.hpp:17:0[m[K,
+                 from [01m[K/opt/ros/melodic/include/ros/forwards.h:37[m[K,
+                 from [01m[K/opt/ros/melodic/include/ros/common.h:37[m[K,
+                 from [01m[K/opt/ros/melodic/include/ros/ros.h:43[m[K,
+                 from [01m[K/home/fri/Documents/julia/catkin_ws/src/opencv_hw/src/ROSInterface.cpp:1[m[K:
+[01m[K/usr/include/boost/smart_ptr/shared_ptr.hpp:547:18:[m[K [01;36m[Knote: [m[Kcandidate: boost::shared_ptr<T>& boost::shared_ptr<T>::operator=(const boost::shared_ptr<T>&) [with T = const sensor_msgs::Image_<std::allocator<void> >] <near match>
+     shared_ptr & [01;36m[Koperator[m[K=( shared_ptr const & r ) BOOST_SP_NOEXCEPT
+                  [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/boost/smart_ptr/shared_ptr.hpp:547:18:[m[K [01;36m[Knote: [m[K  passing ‘[01m[Kconst ImageConstPtr* {aka const boost::shared_ptr<const sensor_msgs::Image_<std::allocator<void> > >*}[m[K’ as ‘[01m[Kthis[m[K’ argument discards qualifiers
+[01m[K/usr/include/boost/smart_ptr/shared_ptr.hpp:556:18:[m[K [01;36m[Knote: [m[Kcandidate: boost::shared_ptr<T>& boost::shared_ptr<T>::operator=(const boost::shared_ptr<Y>&) [with Y = sensor_msgs::Image_<std::allocator<void> >; T = const sensor_msgs::Image_<std::allocator<void> >] <near match>
+     shared_ptr & [01;36m[Koperator[m[K=(shared_ptr<Y> const & r) BOOST_SP_NOEXCEPT
+                  [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/boost/smart_ptr/shared_ptr.hpp:556:18:[m[K [01;36m[Knote: [m[K  passing ‘[01m[Kconst ImageConstPtr* {aka const boost::shared_ptr<const sensor_msgs::Image_<std::allocator<void> > >*}[m[K’ as ‘[01m[Kthis[m[K’ argument discards qualifiers
+[01m[K/usr/include/boost/smart_ptr/shared_ptr.hpp:567:18:[m[K [01;36m[Knote: [m[Kcandidate: template<class Y> boost::shared_ptr<T>& boost::shared_ptr<T>::operator=(std::auto_ptr<_Up>&) [with Y = Y; T = const sensor_msgs::Image_<std::allocator<void> >]
+     shared_ptr & [01;36m[Koperator[m[K=( std::auto_ptr<Y> & r )
+                  [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/boost/smart_ptr/shared_ptr.hpp:567:18:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/fri/Documents/julia/catkin_ws/src/opencv_hw/src/ROSInterface.cpp:107:75:[m[K [01;36m[Knote: [m[K  ‘[01m[Ksensor_msgs::ImagePtr {aka boost::shared_ptr<sensor_msgs::Image_<std::allocator<void> > >}[m[K’ is not derived from ‘[01m[Kstd::auto_ptr<Y>[m[K’
+         cv_bridge::CvImage(std_msgs::Header(), "bgr8", frame4).toImageMsg([01;36m[K)[m[K;
+                                                                           [01;36m[K^[m[K
+In file included from [01m[K/usr/include/boost/shared_ptr.hpp:17:0[m[K,
+                 from [01m[K/opt/ros/melodic/include/ros/forwards.h:37[m[K,
+                 from [01m[K/opt/ros/melodic/include/ros/common.h:37[m[K,
+                 from [01m[K/opt/ros/melodic/include/ros/ros.h:43[m[K,
+                 from [01m[K/home/fri/Documents/julia/catkin_ws/src/opencv_hw/src/ROSInterface.cpp:1[m[K:
+[01m[K/usr/include/boost/smart_ptr/shared_ptr.hpp:576:18:[m[K [01;36m[Knote: [m[Kcandidate: template<class Y> boost::shared_ptr<T>& boost::shared_ptr<T>::operator=(std::auto_ptr<_Up>&&) [with Y = Y; T = const sensor_msgs::Image_<std::allocator<void> >]
+     shared_ptr & [01;36m[Koperator[m[K=( std::auto_ptr<Y> && r )
+                  [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/boost/smart_ptr/shared_ptr.hpp:576:18:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/fri/Documents/julia/catkin_ws/src/opencv_hw/src/ROSInterface.cpp:107:75:[m[K [01;36m[Knote: [m[K  ‘[01m[Ksensor_msgs::ImagePtr {aka boost::shared_ptr<sensor_msgs::Image_<std::allocator<void> > >}[m[K’ is not derived from ‘[01m[Kstd::auto_ptr<Y>[m[K’
+         cv_bridge::CvImage(std_msgs::Header(), "bgr8", frame4).toImageMsg([01;36m[K)[m[K;
+                                                                           [01;36m[K^[m[K
+In file included from [01m[K/usr/include/boost/shared_ptr.hpp:17:0[m[K,
+                 from [01m[K/opt/ros/melodic/include/ros/forwards.h:37[m[K,
+                 from [01m[K/opt/ros/melodic/include/ros/common.h:37[m[K,
+                 from [01m[K/opt/ros/melodic/include/ros/ros.h:43[m[K,
+                 from [01m[K/home/fri/Documents/julia/catkin_ws/src/opencv_hw/src/ROSInterface.cpp:1[m[K:
+[01m[K/usr/include/boost/smart_ptr/shared_ptr.hpp:598:18:[m[K [01;36m[Knote: [m[Kcandidate: template<class Y, class D> boost::shared_ptr<T>& boost::shared_ptr<T>::operator=(std::unique_ptr<_Up, _Ep>&&) [with Y = Y; D = D; T = const sensor_msgs::Image_<std::allocator<void> >]
+     shared_ptr & [01;36m[Koperator[m[K=( std::unique_ptr<Y, D> && r )
+                  [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/boost/smart_ptr/shared_ptr.hpp:598:18:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/fri/Documents/julia/catkin_ws/src/opencv_hw/src/ROSInterface.cpp:107:75:[m[K [01;36m[Knote: [m[K  ‘[01m[Ksensor_msgs::ImagePtr {aka boost::shared_ptr<sensor_msgs::Image_<std::allocator<void> > >}[m[K’ is not derived from ‘[01m[Kstd::unique_ptr<_Tp, _Dp>[m[K’
+         cv_bridge::CvImage(std_msgs::Header(), "bgr8", frame4).toImageMsg([01;36m[K)[m[K;
+                                                                           [01;36m[K^[m[K
+In file included from [01m[K/usr/include/boost/shared_ptr.hpp:17:0[m[K,
+                 from [01m[K/opt/ros/melodic/include/ros/forwards.h:37[m[K,
+                 from [01m[K/opt/ros/melodic/include/ros/common.h:37[m[K,
+                 from [01m[K/opt/ros/melodic/include/ros/ros.h:43[m[K,
+                 from [01m[K/home/fri/Documents/julia/catkin_ws/src/opencv_hw/src/ROSInterface.cpp:1[m[K:
+[01m[K/usr/include/boost/smart_ptr/shared_ptr.hpp:607:18:[m[K [01;36m[Knote: [m[Kcandidate: template<class Y, class D> boost::shared_ptr<T>& boost::shared_ptr<T>::operator=(boost::movelib::unique_ptr<Y, D>) [with Y = Y; D = D; T = const sensor_msgs::Image_<std::allocator<void> >]
+     shared_ptr & [01;36m[Koperator[m[K=( boost::movelib::unique_ptr<Y, D> r )
+                  [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/boost/smart_ptr/shared_ptr.hpp:607:18:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/fri/Documents/julia/catkin_ws/src/opencv_hw/src/ROSInterface.cpp:107:75:[m[K [01;36m[Knote: [m[K  ‘[01m[Kboost::shared_ptr<sensor_msgs::Image_<std::allocator<void> > >[m[K’ is not derived from ‘[01m[Kboost::movelib::unique_ptr<Y, D>[m[K’
+         cv_bridge::CvImage(std_msgs::Header(), "bgr8", frame4).toImageMsg([01;36m[K)[m[K;
+                                                                           [01;36m[K^[m[K
+In file included from [01m[K/usr/include/boost/shared_ptr.hpp:17:0[m[K,
+                 from [01m[K/opt/ros/melodic/include/ros/forwards.h:37[m[K,
+                 from [01m[K/opt/ros/melodic/include/ros/common.h:37[m[K,
+                 from [01m[K/opt/ros/melodic/include/ros/ros.h:43[m[K,
+                 from [01m[K/home/fri/Documents/julia/catkin_ws/src/opencv_hw/src/ROSInterface.cpp:1[m[K:
+[01m[K/usr/include/boost/smart_ptr/shared_ptr.hpp:658:18:[m[K [01;36m[Knote: [m[Kcandidate: boost::shared_ptr<T>& boost::shared_ptr<T>::operator=(boost::shared_ptr<T>&&) [with T = const sensor_msgs::Image_<std::allocator<void> >] <near match>
+     shared_ptr & [01;36m[Koperator[m[K=( shared_ptr && r ) BOOST_SP_NOEXCEPT
+                  [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/boost/smart_ptr/shared_ptr.hpp:658:18:[m[K [01;36m[Knote: [m[K  passing ‘[01m[Kconst ImageConstPtr* {aka const boost::shared_ptr<const sensor_msgs::Image_<std::allocator<void> > >*}[m[K’ as ‘[01m[Kthis[m[K’ argument discards qualifiers
+[01m[K/usr/include/boost/smart_ptr/shared_ptr.hpp:665:18:[m[K [01;36m[Knote: [m[Kcandidate: boost::shared_ptr<T>& boost::shared_ptr<T>::operator=(boost::shared_ptr<Y>&&) [with Y = sensor_msgs::Image_<std::allocator<void> >; T = const sensor_msgs::Image_<std::allocator<void> >] <near match>
+     shared_ptr & [01;36m[Koperator[m[K=( shared_ptr<Y> && r ) BOOST_SP_NOEXCEPT
+                  [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/boost/smart_ptr/shared_ptr.hpp:665:18:[m[K [01;36m[Knote: [m[K  passing ‘[01m[Kconst ImageConstPtr* {aka const boost::shared_ptr<const sensor_msgs::Image_<std::allocator<void> > >*}[m[K’ as ‘[01m[Kthis[m[K’ argument discards qualifiers
+[01m[K/usr/include/boost/smart_ptr/shared_ptr.hpp:683:18:[m[K [01;36m[Knote: [m[Kcandidate: boost::shared_ptr<T>& boost::shared_ptr<T>::operator=(boost::detail::sp_nullptr_t) [with T = const sensor_msgs::Image_<std::allocator<void> >; boost::detail::sp_nullptr_t = std::nullptr_t]
+     shared_ptr & [01;36m[Koperator[m[K=( boost::detail::sp_nullptr_t ) BOOST_SP_NOEXCEPT
+                  [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/boost/smart_ptr/shared_ptr.hpp:683:18:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Ksensor_msgs::ImagePtr {aka boost::shared_ptr<sensor_msgs::Image_<std::allocator<void> > >}[m[K’ to ‘[01m[Kboost::detail::sp_nullptr_t {aka std::nullptr_t}[m[K’
+make[2]: *** [CMakeFiles/opencv_hw.dir/src/opencv_hw.cpp.o] Error 1
+make[2]: *** Waiting for unfinished jobs....
+make[2]: *** [CMakeFiles/opencv_hw.dir/src/ROSInterface.cpp.o] Error 1
+make[1]: *** [CMakeFiles/opencv_hw.dir/all] Error 2
+make: *** [all] Error 2
